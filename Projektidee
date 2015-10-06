@@ -1,0 +1,18 @@
+Projektidee von Michael Ziesemann:
+
+Interaktives Lernprogramm für die japanischen Silbenalphabete Hiragana und Katakana.
+
+Die Idee ist ein Lernprogramm für die Schriftzeichen zu machen, so dass das Lesen der Schriftzeichen
+erlernt und getestet werden kann. Hierzu soll es ein Quiz geben, dass das Wissen mit Multiple-Choice abfragt. 
+Eine Möglichkeit zum "Lernen" bzw Anschauen der Zeichen bevor dem Test soll es auch geben. 
+
+Das Programm soll sich daher im Idealfall das Profil des Lernenden merken, um dann darauf basierend den Test aufzubauen.
+Alle Zeichen auf einmal abzufragen wäre daher anfangs nicht das Ziel (es sind jeweils 46 Zeichen), sondern ein geeignetes Intervall
+soll gewählt werden (ich denke 5 oder 10 Zeichen am Stück).
+Gelernte Zeichen sollen dann möglichst motivierend/anschaulich "abgehakt" werden.
+
+Das als Grundidee, es ließe sich sicher noch erweitern, z.B. Testen bzw Lernen der Schreibweise 
+(Schreibreihenfolge wird generell als wichtig erachtet), oder ein Testen der Lesefähigkeit von Vokabeln, 
+die sich aus den gelernten Silben zusammensetzen.
+
+Selbstredend: Das Programm soll letztlich über Browser auf PC, Smartphone (etc) spielbar sein.
