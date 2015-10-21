@@ -1,1 +1,5 @@
 Michael Ziesemann und Anh-Thu Nguyen
+
+Wenn man die Lupe ausgewählt hat und Gegenstände untersucht soll unterhalb des Raums ein Text erscheinen. Z.B. "Die Tür ist verschlossen", wenn man auf die Tür klickt.
+Wenn man die Hand ausgewählt hat kann man ggf. einen Gegenstand aufheben, z.B. einen Schlüssel. Daraufhin erscheint ebenso ein Text und der Gegenstand wird in der Item-Leiste sichtbar.
+Wenn man einen Schlüssel gefunden hat, soll man nun beim Klicken auf die Tür die Tür öffnen können.
