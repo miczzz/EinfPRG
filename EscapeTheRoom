@@ -2,6 +2,13 @@ Projektidee von Michael Ziesemann und Anh-Thu Nguyen und Nam Ha
 
 Neue Idee:
 Escape the room
+2D, Point and click
 
-Ein kleines Spiel, in dem man versuchen muss, den Ausgang aus einem Raum zu finden. 
-Man muss dabei Minispiele lösen um Schlüssel zu erhalten.
+
+Ein kleines Spiel, in dem man versuchen muss, den Ausgang aus einem Raum zu finden. Man kann durch die Icons "Lupe" und "Hand"
+mit den Gegenständen im Raum interagieren. Mit der Lupe kann man Gegenstände untersuchen. Die Ergebnisse werden als Text 
+in einem seperaten Fenster angezeigt. Mit der Hand kann man Gegenstände aufsammeln, wie zum Beispiel einen Schlüssel aus einer
+Schublade. Die aufgesammelten Gegenstände werden an der Seite angezeigt.
+
+1. Rätsel: Zahlencode für eine Schublade finden. Man findet diesen verschlüsselt hinter einem Bilderrahmen.
+2. Rätsel: In der Schublade ist ein Schlüssel für die verschlossene Tür.
