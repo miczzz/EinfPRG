@@ -5,9 +5,10 @@ sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird
 sollen. Notieren Sie jeweils, weshalb es die einzelnen Ansichten geben soll und warum Sie sich jeweils für die Komponenten
 entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte andere Komponenten entschieden haben.)
 
-1. Ansicht: Menü mit den Optionen "Spiel starten", "Anleitung" und "Optionen"
-1.1 Ansicht: Bei Optionen kann man die Musik an- und ausschalten
-2. Ansicht: 3 Fenster(canvas), eins für den Raum in dem man Gegenstände anklicken kann, eins in dem das Inventar angezeigt wird
-            und eins in dem ein Text angezeigt werden kann
-3. Ansicht: Wird aufgerufen wenn man das Spiel durchgespielt hat. Möglichkeit um neuzustarten. 
+1.  Ansicht: Menü mit den Optionen "Spiel starten", "Anleitung" und "Optionen"
+1.1 Ansicht: Die Anleitung wird als Text und evtl. Beispielbildern dargestellt 
+1.2 Ansicht: Bei Optionen kann man die Musik an- und ausschalten
+2.  Ansicht: 3 Fenster(canvas), eins für den Raum in dem man Gegenstände anklicken kann, eins in dem das Inventar angezeigt wird
+             und eins in dem ein Text angezeigt werden kann
+3.  Ansicht: Wird aufgerufen wenn man das Spiel durchgespielt hat. Möglichkeit um neuzustarten. 
 
