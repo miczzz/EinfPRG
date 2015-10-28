@@ -1,6 +1,9 @@
 Hoai Nam Ha und Anh-Thu Nguyen
 
-HTML-Teil: Legen Sie fest, aus welchen Bestandteilen die Nutzeroberfläche bestehen soll. Auch hier geht es nicht um Quellcode, sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird und welche Komponenten jeweils beinhaltet sein sollen. Notieren Sie jeweils, weshalb es die einzelnen Ansichten geben soll und warum Sie sich jeweils für die Komponenten entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte andere Komponenten entschieden haben.)
+HTML-Teil: Legen Sie fest, aus welchen Bestandteilen die Nutzeroberfläche bestehen soll. Auch hier geht es nicht um Quellcode,
+sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird und welche Komponenten jeweils beinhaltet sein
+sollen. Notieren Sie jeweils, weshalb es die einzelnen Ansichten geben soll und warum Sie sich jeweils für die Komponenten
+entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte andere Komponenten entschieden haben.)
 
 1. Ansicht: Menü mit den Optionen "Spiel starten", "Anleitung" und "Optionen"
 1.1 Ansicht: Bei Optionen kann man die Musik an- und ausschalten
