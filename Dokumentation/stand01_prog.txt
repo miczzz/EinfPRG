@@ -1,5 +1,13 @@
 Michael Ziesemann und Anh-Thu Nguyen
 
-Wenn man die Lupe ausgewählt hat und Gegenstände untersucht soll unterhalb des Raums ein Text erscheinen. Z.B. "Die Tür ist verschlossen", wenn man auf die Tür klickt.
-Wenn man die Hand ausgewählt hat kann man ggf. einen Gegenstand aufheben, z.B. einen Schlüssel. Daraufhin erscheint ebenso ein Text und der Gegenstand wird in der Item-Leiste sichtbar.
-Wenn man einen Schlüssel gefunden hat, soll man nun beim Klicken auf die Tür die Tür öffnen können.
+PHP/JavaScripter-Anteil: Legen Sie hier (jeweils in einem kurzen Satz) fest, welche Funktionalitäten die Anwendung beinhalten
+soll. Sie werden dabei feststellen, dass manche Funktionalitäten tatsächlich nur in Form von mehreren Teilfunktionalitäten
+umgesetzt werden kann, aber das ist vollkommen in Ordnung; in diesen Fällen notieren Sie jede Teilfunktionalität zu der
+betreffenenden Funktionalität. Notieren Sie jeweils zusätzlich, welchem Zweck jede Funktionalität dienen soll (Es geht also noch
+nicht um die tatsächliche Programmierung.)
+
+- Wenn man die Lupe ausgewählt hat und Gegenstände untersucht, soll unterhalb des Raums ein Text erscheinen. Z.B. "Die Tür ist
+verschlossen", wenn man auf die Tür klickt.
+- Wenn man die Hand ausgewählt hat kann man ggf. einen Gegenstand aufheben, z.B. einen Schlüssel. Daraufhin erscheint ebenso ein
+Text und der Gegenstand wird in der Item-Leiste sichtbar.
+- Wenn man einen Schlüssel gefunden hat, soll man nun beim Klicken auf die Tür die Tür öffnen können.
