@@ -1,4 +1,5 @@
-Hoai Nam Ha und Anh-Thu Nguyen
+<!-- index.html -->
+<!-- Anh-Thu Nguyen (2171169)
 
 HTML-Teil: Legen Sie fest, aus welchen Bestandteilen die Nutzeroberfläche bestehen soll. Auch hier geht es nicht um Quellcode,
 sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird und welche Komponenten jeweils beinhaltet sein
@@ -11,4 +12,37 @@ entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte ander
 2.  Ansicht: 3 Fenster(canvas), eins für den Raum in dem man Gegenstände anklicken kann, eins in dem das Inventar angezeigt wird
              und eins in dem ein Text angezeigt werden kann
 3.  Ansicht: Wird aufgerufen wenn man das Spiel durchgespielt hat. Möglichkeit um neuzustarten. 
+-->
 
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Escape The Room</title>
+	</head>
+	<body>
+		<div>
+			<h2><center> Escape The Room </center></h2>
+		</div>
+		<button onclick='start()'>Start</button>	<!-- Button zum starten, Spiel kann noch nicht pausiert werden -->
+		<span id='x'></span> x, <span id='y'></span> y 	<!-- Koordinaten(werden später ausgeblendet) -->
+		<div id='game_object' style='position: relative'> <!-- Spielfeld -->
+			<canvas width='800px' height='400px' id='background_canvas' 
+				style='background: gray; position: absolute; top: 0px; left: 0px;'></canvas> 
+			<canvas width='800px' height='400px' id='main_canvas' style='position: absolute; top: 0px; left: 0px;' 
+				onmousemove='mouse(event)'>Browser kann das Spiel nicht ausführen.</canvas>
+		</div>
+		
+		<div id='inventory' style='position: relative'> <!-- Inventar -->
+			<canvas width='150px' height='400px' id='inventar' 
+				style='background: gray; position: absolute; top: 0px; left: 825px;'></canvas> 
+		</div>
+		
+		<div id='textarea' style='position: relative'> <!-- Textfeld -->
+			<canvas width='800px' height='75px' id='textfeld' 
+				style='background: gray; position: absolute; top: 425px; left: 0px;'></canvas> 
+		</div>
+		
+		<script type="text/javascript" src='game.js'></script>
+	</body>
+</html>
