@@ -1,4 +1,4 @@
-Michael Ziesemann und Anh-Thu Nguyen
+/* Michael Ziesemann
 
 PHP/JavaScripter-Anteil: Legen Sie hier (jeweils in einem kurzen Satz) fest, welche Funktionalitäten die Anwendung beinhalten
 soll. Sie werden dabei feststellen, dass manche Funktionalitäten tatsächlich nur in Form von mehreren Teilfunktionalitäten
@@ -11,3 +11,46 @@ verschlossen", wenn man auf die Tür klickt.
 - Wenn man die Hand ausgewählt hat kann man ggf. einen Gegenstand aufheben, z.B. einen Schlüssel. Daraufhin erscheint ebenso ein
 Text und der Gegenstand wird in der Item-Leiste sichtbar.
 - Wenn man einen Schlüssel gefunden hat, soll man nun beim Klicken auf die Tür die Tür öffnen können.
+*/
+
+init();
+
+function init()
+{
+  background_canvas = document.getElementById('background_canvas');
+  background_ctx = background_canvas.getContext('2d');
+  main_canvas = document.getElementById('main_canvas');
+  main_ctx = main_canvas.getContext('2d');
+
+  inventar = document.getElementById('inventar');
+  inventar_ctx = inventar.getContext('2d');
+  
+  textfeld = document.getElementById('textfeld');
+  textfeld_ctx = textfeld.getContext('2d');
+  
+  load_media();
+}
+
+function load_media()
+{
+  hintergrund = new Image();	// Hintergrundbild laden
+  hintergrund.src = 'images/hintergrund.png';
+  inventarhg = new Image();
+  inventarhg.src = 'images/inventar.png';
+  
+ }
+ 
+function mouse(e)		// Koordinaten der Maus
+{
+  var x = e.pageX - document.getElementById('game_object').offsetLeft;
+  var y = e.pageY - document.getElementById('game_object').offsetTop;
+  document.getElementById('x').innerHTML = x;
+  document.getElementById('y').innerHTML = y;
+}
+
+function start()
+{
+  background_ctx.drawImage(hintergrund, 0, 0);	// Hintergrundbild
+  inventar_ctx.drawImage(inventarhg, 0,0)		// Inventarbild
+  textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die Tür ist verschlossen. Finde einen Weg hinaus.", 25, 25);
+}
