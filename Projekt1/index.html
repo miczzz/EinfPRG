@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<link href="roomone.css" rel="stylesheet">
+		<title>Escape The Room</title>
+	</head>
+	<body>
+		<div>
+			<h2><center> Escape The Room </center></h2>
+		</div>
+		<button onclick='start()'>Start</button>	<!-- Button zum starten, Spiel kann noch nicht pausiert werden -->
+		<span id='x'></span> x, <span id='y'></span> y 	<!-- Koordinaten(werden später ausgeblendet) -->
+		<div id='game_object' style='position: relative'> <!-- Spielfeld -->
+			<canvas width='800px' height='400px' id='background_canvas' 
+				style='background: gray; position: absolute; top: 0px; left: 0px;'></canvas> 
+			<canvas width='800px' height='400px' id='main_canvas' style='position: absolute; top: 0px; left: 0px;' 
+				onmousemove='mouse(event)'>Browser kann das Spiel nicht ausführen.</canvas>
+		</div>
+		
+		<div id='inventory' style='position: relative'> <!-- Inventar -->
+			<canvas width='150px' height='400px' id='inventar' 
+				style='background: gray; position: absolute; top: 0px; left: 825px;'></canvas> 
+		</div>
+		
+		<div id='textarea' style='position: relative'> <!-- Textfeld -->
+			<canvas width='800px' height='75px' id='textfeld' 
+				style='background: gray; position: absolute; top: 425px; left: 0px;'></canvas> 
+		</div>
+		
+
+    <div class="click-zone a" data-zone="Bild"></div>
+    <div class="click-zone b" data-zone="Schubladen"></div>
+
+</div>
+		
+		<script type="text/javascript" src='game.js'></script>
+	</body>
+</html>

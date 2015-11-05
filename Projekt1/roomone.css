@@ -1,0 +1,26 @@
+h2 {
+	color: blue;
+
+}
+
+
+.click-zone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    border: 1px solid blue;
+}
+
+.click-zone.a {
+    left: 40px;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+.click-zone.b {
+    left: 610px;
+    top: 240px;
+    width: 100px;
+    height: 200px;
+}
