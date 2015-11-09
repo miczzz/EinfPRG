@@ -1,0 +1,24 @@
+.mybuttonss {
+    background: none repeat scroll 0 0 #075482;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 26px;
+    padding: 8px;
+}
+
+.mybuttons {
+	text-align: center;
+	width: 200px;
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 20px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  background: #5aa4d6;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
