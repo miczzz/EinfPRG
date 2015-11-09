@@ -25,18 +25,27 @@ function init()
   schluessel_ctx = schluessel.getContext('2d');  
   
   load_media();
+  
+  leveleins.addEventListener("load", menu, false);
+  menu();
 }
 
-function load_media()
+function load_media() // alle Bilder laden
 {
+  leveleins = new Image();	// Hintergrundbild laden
+  leveleins.src = 'images/leveleins.png';
   hintergrund = new Image();	// Hintergrundbild laden
   hintergrund.src = 'images/hintergrund.png';
-  inventarhg = new Image();
+  inventarhg = new Image();	
   inventarhg.src = 'images/inventar.png';
   schluesselgrafik = new Image();
   schluesselgrafik.src = 'images/nokey.png'; 
 
  }
+ 
+function menu(){
+  background_ctx.drawImage(leveleins, 0, 0);
+}
  
 function mouse(e)		// Koordinaten der Maus
 {
