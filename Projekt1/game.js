@@ -31,10 +31,10 @@ function load_media()
 {
   hintergrund = new Image();	// Hintergrundbild laden
   hintergrund.src = 'images/hintergrund.png';
-  schluesselgrafik = new Image();
-  schluesselgrafik = 'images/key.png';
   inventarhg = new Image();
   inventarhg.src = 'images/inventar.png';
+  schluesselgrafik = new Image();
+  schluesselgrafik.src = 'images/nokey.png'; 
 
  }
  
@@ -62,11 +62,13 @@ function changeText()
 	} else if(currentClickZone == "Schubladen"){
 	textfeld_ctx.fillText("Du öffnest die Schubladen...und la-di-da du findest einen Schlüssel!", 25, 25);
 	hasKey = 1;
+	schluesselgrafik.src = 'images/key.png';
+	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
 
 	} 
 	  else if(currentClickZone == "Key1"){
 		if(hasKey==0){
-	textfeld_ctx.fillText(hasKey + "Du schaust dir den Schlüssel an, die Frage ist bloß...hast du ihn schon oder noch nicht?!", 25, 25);
+	textfeld_ctx.fillText("Du schaust dir den Schlüssel an, die Frage ist bloß...hast du ihn schon oder noch nicht?!", 25, 25);
 	}
 		if(hasKey==1){
 		textfeld_ctx.fillText("Ja! Du hast den Schlüssel gefunden!", 25, 25);
