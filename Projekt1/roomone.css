@@ -16,6 +16,7 @@ h2 {
     top: 200px;
     width: 100px;
     height: 100px;
+	border-radius: 15px;
 }
 
 .click-zone.b {
@@ -23,4 +24,11 @@ h2 {
     top: 240px;
     width: 100px;
     height: 200px;
+}
+
+.click-zone.c {
+    left: 840px;
+    top: 142px;
+    width: 130px;
+    height: 70px;
 }
