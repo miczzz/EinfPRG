@@ -39,7 +39,7 @@ function load_media() // alle Bilder laden
   inventarhg = new Image();	
   inventarhg.src = 'images/inventar.png';
   schluesselgrafik = new Image();
-  schluesselgrafik.src = 'images/nokey.png'; 
+  schluesselgrafik.src = 'images/key.png'; 
 
  }
  
@@ -49,8 +49,8 @@ function menu(){
  
 function mouse(e)		// Koordinaten der Maus
 {
-  var x = e.pageX - document.getElementById('game_object').offsetLeft;
-  var y = e.pageY - document.getElementById('game_object').offsetTop;
+  var x = e.pageX;
+  var y = e.pageY;
   document.getElementById('x').innerHTML = x;
   document.getElementById('y').innerHTML = y;
 }
@@ -59,7 +59,6 @@ function start()
 {
   background_ctx.drawImage(hintergrund, 0, 0);	// Hintergrundbild
   inventar_ctx.drawImage(inventarhg, 0,0);		// Inventarbild
-  schluessel_ctx.drawImage(schluesselgrafik, 0,0);  // Bild vom Schlüssel, funktioniert aber nicht...:/
   textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die Tür ist verschlossen. Finde einen Weg hinaus.", 25, 25);
 }
 
@@ -68,24 +67,24 @@ function changeText()
 {
  	if(currentClickZone == "Bild"){
 	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gefällt dir das Bild nicht, du kannst aber nicht sagen warum. Ansonsten entdeckst du nichts ungewöhnliches.", 25, 25);
-	} else if(currentClickZone == "Schubladen"){
+	} 
+
+	if(currentClickZone == "Schubladen"){
 	textfeld_ctx.fillText("Du öffnest die Schubladen...und la-di-da du findest einen Schlüssel!", 25, 25);
 	hasKey = 1;
-	schluesselgrafik.src = 'images/key.png';
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
 
 	} 
-	  else if(currentClickZone == "Key1"){
+	
+	if(currentClickZone == "Key1"){
 		if(hasKey==0){
-	textfeld_ctx.fillText("Du schaust dir den Schlüssel an, die Frage ist bloß...hast du ihn schon oder noch nicht?!", 25, 25);
+	textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
 	}
 		if(hasKey==1){
 		textfeld_ctx.fillText("Ja! Du hast den Schlüssel gefunden!", 25, 25);
 		}
 	} 	
-	else {
-	textfeld_ctx.fillText("Hmm..gar nicht gut.", 25, 25);
-	}
+
 }
 
 
