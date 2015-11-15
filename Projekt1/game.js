@@ -27,7 +27,6 @@ function init()
   load_media();
   
   leveleins.addEventListener("load", menu, false);
-  menu();
 }
 
 function load_media() // alle Bilder laden
