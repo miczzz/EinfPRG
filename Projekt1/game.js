@@ -20,6 +20,8 @@ function init()
   
   textfeld = document.getElementById('textfeld');
   textfeld_ctx = textfeld.getContext('2d');
+  textfeld_ctx.font = '15pt Calibri';
+  textfeld_ctx.fillStyle = '#5aa4d6';
   
   schluessel = document.getElementById('schluessel');
   schluessel_ctx = schluessel.getContext('2d');  
@@ -31,7 +33,7 @@ function init()
 
 function load_media() // alle Bilder laden
 {
-  leveleins = new Image();	// Hintergrundbild laden
+  leveleins = new Image();	
   leveleins.src = 'images/leveleins.png';
   hintergrund = new Image();	// Hintergrundbild laden
   hintergrund.src = 'images/hintergrund.png';
