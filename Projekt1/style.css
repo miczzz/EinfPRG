@@ -13,6 +13,18 @@ header{
 	color: #5aa4d6;
 }
 
+p{
+	font-family: Calibri;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h1{
+	font-family: Calibri;
+	font-size: 30px;
+	font-weight: bold;
+}
+
 .mybuttons {
 	text-align: center;
 	width: 200px;
