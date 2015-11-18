@@ -5,3 +5,18 @@ MySQL-Teil: Sie notieren, welche Daten jeweils langfristig gespeichert werden m�
 bzw. mittels welcher Ansichten Nutzer Daten anzeigen und/oder ändern können.
 (Auch hier gilt: Notieren Sie jeweils, warum Sie sich dafür entschieden haben, was wo passieren soll.)
 
+Aufbau der Ansicht
+
+1.          Auf der rechten Seite des Spiels ist ein kleines Fenster abgebildet, wo die gefundene Icons zu sehen sind. Aus dem Grund,                weil es  am übersichtlichsten ist und man von da schnell zugreifen kann.
+
+2.          Eine feste Ansicht ist zum Beispiel der Handschuh, womit man Gegenstände aufsammeln kann.
+            Handschuhe sind typische Symbole um Sachen zu greifen.
+2.1         Der Spieler kann die Ansicht auf ein weiteres Icon " Lupe " wechseln um Sachen zu analysieren.
+            Die Lupe deshalb weil jeder Spieler weißt, was damit gemeint ist.
+
+3.          Nach jedem Klick eines Gegenstandes erscheint im Bildschirm ein kleines Textfenster mit der dazugehörige Information,
+            je nachdem ob es Hinweise zum Gegenstand sind oder eine kurze Nachricht, dass da nichts zu finden gibt.
+            Das Textfeld dient zur Information für den Spieler, was zu tun ist, ob er bei seiner Suche richtig liegt oder falsch.
+            
+3.1         Falls der Spieler richtig liegt, wird er mittels der Textnachricht weitergeleitet auf Hinweise wo er weiter suchen soll
+            oder ein bestimmtes Rätsel absolvieren muss.
