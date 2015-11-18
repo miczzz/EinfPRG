@@ -1,0 +1,7 @@
+/* Hoai Nam Ha
+
+
+MySQL-Teil: Sie notieren, welche Daten jeweils langfristig gespeichert werden müssen,
+bzw. mittels welcher Ansichten Nutzer Daten anzeigen und/oder ändern können.
+(Auch hier gilt: Notieren Sie jeweils, warum Sie sich dafür entschieden haben, was wo passieren soll.)
+
