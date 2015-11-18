@@ -7,7 +7,8 @@ bzw. mittels welcher Ansichten Nutzer Daten anzeigen und/oder ändern können.
 
 Aufbau der Ansicht
 
-1.          Auf der rechten Seite des Spiels ist ein kleines Fenster abgebildet, wo die gefundene Icons zu sehen sind. Aus dem Grund,                weil es  am übersichtlichsten ist und man von da schnell zugreifen kann.
+1.          Auf der rechten Seite des Spiels ist ein kleines Fenster abgebildet, wo die gefundene Icons zu sehen sind.
+            Aus dem Grund, weil es  am übersichtlichsten ist und man von da schnell zugreifen kann.
 
 2.          Eine feste Ansicht ist zum Beispiel der Handschuh, womit man Gegenstände aufsammeln kann.
             Handschuhe sind typische Symbole um Sachen zu greifen.
