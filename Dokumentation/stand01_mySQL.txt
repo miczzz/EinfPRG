@@ -21,3 +21,30 @@ Aufbau der Ansicht
             
 3.1         Falls der Spieler richtig liegt, wird er mittels der Textnachricht weitergeleitet auf Hinweise wo er weiter suchen soll
             oder ein bestimmtes Rätsel absolvieren muss.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
