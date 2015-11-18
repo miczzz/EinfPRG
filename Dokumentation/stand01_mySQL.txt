@@ -24,6 +24,15 @@ Aufbau der Ansicht
 
 
 
+Dauerhafte Ansicht :
+--> Das Fenster, wo die gefundende Gegenstände zu sehen sind.
+
+Veränderbare Ansicht :
+--> Die Icons wie Handschuhe oder Lupe kann man entweder Anzeigen lassen oder ändern.
+
+Geklickte Gegenstände - Funktion :
+--> Textfeld im unterem Bildschirm wird eingeblendet mit der dazugehörige Information.
+
 
 
 
