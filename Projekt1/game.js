@@ -1,3 +1,10 @@
+/*
+\xFC = ü
+\xF6 = ö
+\xE4 = ä
+\xDF = ß
+*/
+
 init();
 
 var clickZones = document.getElementsByClassName('click-zone');
@@ -66,18 +73,18 @@ function start()
 {
   background_ctx.drawImage(hintergrund, 0, 0);	// Hintergrundbild
   inventar_ctx.drawImage(inventarhg, 0,0);		// Inventarbild
-  textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die Tür ist verschlossen. Finde einen Weg hinaus.", 25, 25);
+  textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die T\xFCr ist verschlossen. Finde einen Weg hinaus.", 25, 25);
 }
 
 
 function changeText()
 {
  	if(currentClickZone == "Bild"){
-	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gefällt dir das Bild nicht, du kannst aber nicht sagen warum. Ansonsten entdeckst du nichts ungewöhnliches.", 25, 25);
+	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gefällt dir das Bild nicht, du kannst aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 25);
 	} 
 
 	if(currentClickZone == "KommodeLinks"){
-	textfeld_ctx.fillText("Du öffnest die Schubladen...und la-di-da du findest einen Schlüssel!", 25, 25);
+	textfeld_ctx.fillText("Du \xF6ffnest die Schubladen...und la-di-da du findest einen Schl\xFCssel!", 25, 25);
 	hasKey = 1;
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
 
@@ -88,19 +95,19 @@ function changeText()
 	textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
 	}
 		if(hasKey==1){
-		textfeld_ctx.fillText("Ja! Du hast den Schlüssel gefunden!", 25, 25);
+		textfeld_ctx.fillText("Ja! Du hast den Schl\xFCssel gefunden!", 25, 25);
 		}
 	} 	
 
 	if(currentClickZone == "Tuer"){
 		if(hasKey==0){
-		textfeld_ctx.fillText("Die Tür ist abgeschlossen!", 25, 25);
+		textfeld_ctx.fillText("Die T\xFCr ist abgeschlossen!", 25, 25);
 		}
 		if(hasKey==1&&hasRightKey==0){
-		textfeld_ctx.fillText("Der Schlüssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
+		textfeld_ctx.fillText("Der Schl\xFCssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
 		}
 		if(hasRightKey==1){
-		textfeld_ctx.fillText("Der Schlüssel passt! Du kannst dein Glück kaum fassen und genießt die Freiheit!", 25, 25);
+		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Glück kaum fassen und genießt die Freiheit!", 25, 25);
 		}
 	}
 	
@@ -110,7 +117,7 @@ function changeText()
 	}
 		else if(hasKey==1){
 		hasRightKey=1;
-		textfeld_ctx.fillText("Der Schlüssel passt! Du findest einen neuen Schlüssel!", 25, 25);
+		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du findest einen neuen Schl\xFCssel!", 25, 25);
 		schluessel2_ctx.drawImage(schluesselgrafik2, 0,0);
 		}
 	}
