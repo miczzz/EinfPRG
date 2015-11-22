@@ -11,12 +11,12 @@
 			<header><center>Escape The Room </center></header>
 		</div>
 		<button class="mybuttons" onclick='start()'>Start</button>	<!-- Button zum starten, Spiel kann noch nicht pausiert werden -->
-		<span id='x'></span> x, <span id='y'></span> y 	<!-- Koordinaten(werden später ausgeblendet) -->
+		<span id='x'></span> x, <span id='y'></span> y 	<!-- Koordinaten(werden spï¿½ter ausgeblendet) -->
 		<div id='game_object' style='position: relative'> <!-- Spielfeld -->
 			<canvas width='800px' height='400px' id='background_canvas' 
 				style='background: gray; position: absolute; top: 0px; left: 0px;'></canvas> 
 			<canvas width='800px' height='400px' id='main_canvas' style='position: absolute; top: 0px; left: 0px;' 
-				onmousemove='mouse(event)'>Browser kann das Spiel nicht ausführen.</canvas>
+				onmousemove='mouse(event)'>Browser kann das Spiel nicht ausfï¿½hren.</canvas>
 		</div>
 		
 		<div id='inventory' style='position: relative'> <!-- Inventar -->
@@ -26,7 +26,12 @@
 		
  		<div id='key' style='position: relative'> <!-- Key -->
 			<canvas width='70px' height='63px' id='schluessel' 
-				style='background: green; position: absolute; top: 58px; left: 865px;'></canvas> 
+				style='background: green; position: absolute; top: 118px; left: 865px;'></canvas> 
+		</div> 
+		
+ 		<div id='key2' style='position: relative'> <!-- Key2 -->
+			<canvas width='70px' height='63px' id='schluessel2' 
+				style='background: blue; position: absolute; top: 218px; left: 865px;'></canvas> 
 		</div> 
 		
 		
@@ -36,9 +41,29 @@
 		</div>
 		
 
-    <div class="click-zone a" data-zone="Bild"></div>
-    <div class="click-zone b" data-zone="Schubladen"></div>
-	<div class="click-zone c" data-zone="Key1"></div>
+    <div class="click-zone a" data-zone="Fenster"></div>
+    <div class="click-zone b" data-zone="Tuer"></div>
+	<div class="click-zone c" data-zone="Inventar1"></div>
+	<div class="click-zone d" data-zone="Inventar2"></div>
+	<div class="click-zone e" data-zone="KommodeRechts"></div>
+	<div class="click-zone f" data-zone="Teppich"></div>
+	<div class="click-zone g" data-zone="Pflanzentopf"></div>
+	<div class="click-zone h" data-zone="Regal1"></div>
+	<div class="click-zone i" data-zone="Regal2"></div>
+	<div class="click-zone j" data-zone="Regal3"></div>
+	<div class="click-zone k" data-zone="Regal4"></div>
+	<div class="click-zone l" data-zone="Regal5"></div>
+	<div class="click-zone m" data-zone="Regal6"></div>
+	<div class="click-zone n" data-zone="Regal7"></div>
+	<div class="click-zone o" data-zone="Regal8"></div>
+	<div class="click-zone p" data-zone="Regal9"></div>
+	<div class="click-zone q" data-zone="Regal10"></div>
+	<div class="click-zone r" data-zone="Regal11"></div>
+	<div class="click-zone s" data-zone="Regal12"></div>
+	<div class="click-zone t" data-zone="Bild"></div>
+	<div class="click-zone u" data-zone="Obstschale"></div>
+	<div class="click-zone v" data-zone="KommodeLinks"></div>
+	<div class="click-zone w" data-zone="Pflanze"></div>
 
 </div>
 		

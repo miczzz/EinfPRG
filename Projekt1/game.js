@@ -3,6 +3,7 @@ init();
 var clickZones = document.getElementsByClassName('click-zone');
 var currentClickZone = "nowhere";
 var hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
+var hasRightKey = 0; // hat man den Türschlüssel gefunden?
 
 for (var i = 0; i < clickZones.length; i += 1) {
     clickZones[i].addEventListener("click", click);
@@ -25,6 +26,9 @@ function init()
   
   schluessel = document.getElementById('schluessel');
   schluessel_ctx = schluessel.getContext('2d');  
+
+  schluessel2 = document.getElementById('schluessel2');
+  schluessel2_ctx = schluessel2.getContext('2d');  
   
   load_media();
   
@@ -41,7 +45,9 @@ function load_media() // alle Bilder laden
   inventarhg.src = 'images/inventar.png';
   schluesselgrafik = new Image();
   schluesselgrafik.src = 'images/key.png'; 
-
+  schluesselgrafik2 = new Image();
+  schluesselgrafik2.src = 'images/key2.png'; 
+  
  }
  
 function menu(){
@@ -70,14 +76,14 @@ function changeText()
 	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gefällt dir das Bild nicht, du kannst aber nicht sagen warum. Ansonsten entdeckst du nichts ungewöhnliches.", 25, 25);
 	} 
 
-	if(currentClickZone == "Schubladen"){
+	if(currentClickZone == "KommodeLinks"){
 	textfeld_ctx.fillText("Du öffnest die Schubladen...und la-di-da du findest einen Schlüssel!", 25, 25);
 	hasKey = 1;
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
 
 	} 
 	
-	if(currentClickZone == "Key1"){
+	if(currentClickZone == "Inventar1"){
 		if(hasKey==0){
 	textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
 	}
@@ -86,6 +92,29 @@ function changeText()
 		}
 	} 	
 
+	if(currentClickZone == "Tuer"){
+		if(hasKey==0){
+		textfeld_ctx.fillText("Die Tür ist abgeschlossen!", 25, 25);
+		}
+		if(hasKey==1&&hasRightKey==0){
+		textfeld_ctx.fillText("Der Schlüssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
+		}
+		if(hasRightKey==1){
+		textfeld_ctx.fillText("Der Schlüssel passt! Du kannst dein Glück kaum fassen und genießt die Freiheit!", 25, 25);
+		}
+	}
+	
+	if(currentClickZone == "KommodeRechts"){
+	if(hasKey==0){
+	textfeld_ctx.fillText("Die verdammte Kommode ist abgeschlossen!", 25, 25);
+	}
+		else if(hasKey==1){
+		hasRightKey=1;
+		textfeld_ctx.fillText("Der Schlüssel passt! Du findest einen neuen Schlüssel!", 25, 25);
+		schluessel2_ctx.drawImage(schluesselgrafik2, 0,0);
+		}
+	}
+	
 }
 
 

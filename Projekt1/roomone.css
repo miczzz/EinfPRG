@@ -25,25 +25,165 @@ body {
     z-index: 2;
     border: 1px solid blue;
 }
-
+/* Fenster */
 .click-zone.a {
-    left: 40px;
-    top: 200px;
-    width: 100px;
-    height: 100px;
-	border-radius: 15px;
+	left: 13px;
+	top: 173px;
+	width: 106px;
+	height: 174px;
+	border-bottom-right-radius:75px;
 }
-
+/* Tür */
 .click-zone.b {
-    left: 610px;
-    top: 240px;
-    width: 100px;
-    height: 200px;
+	left: 720px;
+	top: 202px;
+	width: 85px;
+	height: 287px;
 }
-
+/* Inventar 1 */
 .click-zone.c {
-    left: 840px;
-    top: 142px;
-    width: 130px;
-    height: 70px;
+	left: 850px;
+	top: 225px;
+	width: 118px;
+	height: 85px;
+}
+/* Inventar 2 */
+.click-zone.d {
+	left: 848px;
+	top: 319px;
+	width: 123px;
+	height: 94px;
+}
+/* rechte Kommode (mit Obst drauf) */
+.click-zone.e {
+	left: 226px;
+	top: 300px;
+	width: 124px;
+	height: 118px;
+}
+/* Teppich */
+.click-zone.f {
+	left: 255px;
+	top: 452px;
+	width: 314px;
+	height: 72px;
+}
+/* Pflanzentopf */
+.click-zone.g {
+	left: 145px;
+	top: 341px;
+	width: 69px;
+	height: 81px;
+}
+/* Regal 1 (Bücher1)*/
+.click-zone.h {
+	left: 363px;
+	top: 152px;
+	width: 93px;
+	height: 54px;
+}
+/* Regal 2 (Tassen) */
+.click-zone.i {
+	left: 466px;
+	top: 157px;
+	width: 99px;
+	height: 53px;
+}
+/* Regal 3 (Uhr) */
+.click-zone.j {
+	left: 575px;
+	top: 153px;
+	width: 82px;
+	height: 55px;
+}
+/* Regal 4 (Bücher2) */
+.click-zone.k {
+	left: 363px;
+	top: 217px;
+	width: 95px;
+	height: 55px;
+}
+/* Regal 5 (Blume) */
+.click-zone.l {
+	left: 468px;
+	top: 217px;
+	width: 95px;
+	height: 53px;
+}
+/* Regal 6 (Bücher3) */
+.click-zone.m {
+	left: 574px;
+	top: 220px;
+	width: 84px;
+	height: 49px;
+}
+/* Regal 7 (Lampe) */
+.click-zone.n {
+	left: 367px;
+	top: 284px;
+	width: 83px;
+	height: 50px;
+}
+/* Regal 8 (Flaschen) */
+.click-zone.o {
+	left: 466px;
+	top: 284px;
+	width: 97px;
+	height: 54px;
+}
+/* Regal 9 (Ordner1) */
+.click-zone.p {
+	left: 574px;
+	top: 283px;
+	width: 85px;
+	height: 51px;
+}
+/* Regal 10 (Bild) */
+.click-zone.q {
+	left: 366px;
+	top: 345px;
+	width: 88px;
+	height: 53px;
+}
+/* Regal 11 (Truhe) */
+.click-zone.r {
+	left: 471px;
+	top: 351px;
+	width: 93px;
+	height: 45px;
+}
+/* Regal 12 (Ordner2) */
+.click-zone.s {
+	left: 571px;
+	top: 349px;
+	width: 85px;
+	height: 49px;
+}
+/* Bild */
+.click-zone.t {
+	left: 199px;
+	top: 159px;
+	width: 104px;
+	height: 73px;
+}
+/* Obstschale */
+.click-zone.u {
+	left: 240px;
+	top: 243px;
+	width: 99px;
+	height: 51px;
+}
+/* Kommode */
+.click-zone.v {
+	left: 12px;
+	top: 354px;
+	width: 115px;
+	height: 158px;
+}
+/* Pflanze */
+.click-zone.w {
+	left: 143px;
+	top: 243px;
+	width: 73px;
+	height: 94px;
 }
