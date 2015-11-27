@@ -1,4 +1,4 @@
-Anh-Thu Nguyen (2171169)
+﻿Anh-Thu Nguyen (2171169)
 
 HTML-Teil: Legen Sie fest, aus welchen Bestandteilen die Nutzeroberfläche bestehen soll. Auch hier geht es nicht um Quellcode,
 sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird und welche Komponenten jeweils beinhaltet sein
@@ -15,3 +15,16 @@ entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte ander
 	     2. Ein Inventar, in dem die aufgesammelten Gegenstände angezeigt werden.
 	     3. Ein Textfeld, dass sich durch die Klicks auf Gegenstände ändert.
 3.  Ansicht: Wird aufgerufen wenn man das Spiel durchgespielt hat. Möglichkeit um neuzustarten. 
+
+=== Kommentar Alpers, nov 27 ===
+
+Liebe/r Studierende/r,
+
+in den Dokumentationsdateien sollen Sie kontinuierlich dokumentieren, was Sie am Projekt aus welchen Gründen geändert haben.
+
+Lesen Sie sich bitte meine entsprechenden Hinweise durch und beachten Sie sie.
+
+Leider haben Sie außerdem nahezu alles ignoriert, was wir in der Veranstaltung bezüglich HTML 5 besprochen haben. Effektiv haben Sie in HTML 4.01 gearbeitet. Arbeiten Sie nochmal das Skript zu HTML 5 durch, prüfen Sie, an welchen Stellen Sie die neuen Container nicht genutzt haben und ändern Sie das entsprechend ab. Setzen Sie außerdem Microdata und Container wie <details> ein.
+
+Viele Grüße,
+Markus Alpers

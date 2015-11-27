@@ -1,4 +1,4 @@
-/* Hoai Nam Ha
+﻿/* Hoai Nam Ha
 
 
 MySQL-Teil: Sie notieren, welche Daten jeweils langfristig gespeichert werden müssen,
@@ -33,7 +33,14 @@ Veränderbare Ansicht :
 Geklickte Gegenstände - Funktion :
 --> Textfeld im unterem Bildschirm wird eingeblendet mit der dazugehörige Information.
 
+=== Kommentar Alpers, nov 27 ===
 
+Liebe/r Studierende/r,
+
+leider geht aus Ihren Angaben nicht hervor, welche Daten in der DB gespeichert, bzw. aus der DB geladen werden sollen. Da auch im Quellcode keine Zeile MySQL enthalten ist, weiß ich nicht, was Sie bislang getan haben.
+
+Viele Grüße,
+Markus Alpers
 
 
 
