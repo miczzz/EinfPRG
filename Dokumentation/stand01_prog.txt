@@ -1,4 +1,4 @@
-/* Michael Ziesemann
+﻿/* Michael Ziesemann
 
 PHP/JavaScripter-Anteil: Legen Sie hier (jeweils in einem kurzen Satz) fest, welche Funktionalitäten die Anwendung beinhalten
 soll. Sie werden dabei feststellen, dass manche Funktionalitäten tatsächlich nur in Form von mehreren Teilfunktionalitäten
@@ -54,3 +54,18 @@ function start()
   inventar_ctx.drawImage(inventarhg, 0,0)		// Inventarbild
   textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die Tür ist verschlossen. Finde einen Weg hinaus.", 25, 25);
 }
+
+=== Kommentar Alpers, nov 27 ===
+
+Liebe/r Studierende/r,
+
+bitte notieren Sie in der Dokumentation kontinuierlich, welche Entscheidungen Sie wann warum getroffen haben, um so festzuhalten, wie Sie am Projekt gearbeitet haben. Quellcode gehört nicht in diese Datei.
+
+So viel zum Negativen, kommen wir jetzt zum Positiven. Sie haben jetzt eine erste funktionierende Version des JS-Teils programmiert. Jetzt kommen wir also zur Verfeinerung und Verbesserung:
+- Es sollte nicht passieren, dass Nutzer die gleiche Rückmeldung doppelt erhalten. (Stichwort: Spieler hat einen Schlüssel gefunden. Nachdem er das entsprechende Feld ein zweites Mal anwählt erhält er die gleiche Gratulation erneut.)
+- Umlaute sollten in allen Browsern gleich angezeigt werden.
+- Der Text sollte stets komplett angezeigt werden.
+- Nachdem der Spieler einen Raum gelöst hat, sollte ein neuer Raum oder ein abschließender Bildschirm gezeigt werden. Da Sie ja mit einer DB arbeiten wäre hier beispielsweise die Einblendung einer Highscore-Liste eine von vielen Möglichkeiten.
+
+Viele Grüße,
+Markus Alpers
