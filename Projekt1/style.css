@@ -1,4 +1,12 @@
+table, th, td {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
 body {
+    
 	background-image: url(images/startbild.png);
 	background-color: silver;
 	background-repeat: no-repeat;
@@ -7,20 +15,17 @@ body {
 }
 
 header{
-	font-family: Calibri;
 	font-size: 80px;
 	font-weight: bold;
 	color: #5aa4d6;
 }
 
 p{
-	font-family: Calibri;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 h1{
-	font-family: Calibri;
 	font-size: 30px;
 	font-weight: bold;
 }
