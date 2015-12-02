@@ -1,9 +1,6 @@
 ﻿Anh-Thu Nguyen (2171169)
 
-HTML-Teil: Legen Sie fest, aus welchen Bestandteilen die Nutzeroberfläche bestehen soll. Auch hier geht es nicht um Quellcode,
-sondern darum, dass Sie festlegen, wie viele Ansichten Ihre Anwendung haben wird und welche Komponenten jeweils beinhaltet sein
-sollen. Notieren Sie jeweils, weshalb es die einzelnen Ansichten geben soll und warum Sie sich jeweils für die Komponenten
-entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte andere Komponenten entschieden haben.)
+Idee:
 
 1.  Ansicht: Name des Spiels, Menü mit den Optionen "Spiel starten", "Anleitung" und "Optionen"
 1.1 Ansicht: Die Anleitung wird als Text und evtl. Beispielbildern dargestellt.
@@ -15,6 +12,75 @@ entschieden haben. (Notieren Sie ggf. auch, warum Sie sich gegen bestimmte ander
 	     2. Ein Inventar, in dem die aufgesammelten Gegenstände angezeigt werden.
 	     3. Ein Textfeld, dass sich durch die Klicks auf Gegenstände ändert.
 3.  Ansicht: Wird aufgerufen wenn man das Spiel durchgespielt hat. Möglichkeit um neuzustarten. 
+
+
+
+Umsetzung:
+
+29 Oktober 2015
+- Seite index.html erstellt, hier wird das Spiel gespielt
+- Titel und Überschrift hinzugefügt
+- Koordinaten der Maus anzeigen, um zu sehen welche Koordinaten die Gegenstände haben
+- 3 Canvas hinzugefügt, eins für das Spielfeld(800px,400px)
+			eins für das Inventar (150px,400px)
+			eins für das Textfeld (800px, 75px)
+- Positionen der Canvas festgelegt
+- Hintergrundfarbe der Canvas ist grau, damit man sieht wo sie sich befinden
+- Button zum starten des Spiels hinzugefügt
+- Anbindung zu Javascript erstellt
+
+
+05 November 2015
+(- Bild für das Spielfeld erstellt)
+(- Bild für das Inventarfeld erstellt)
+
+
+09 November 2015
+- Seite start.html erstellt
+- 3 Buttons hinzugefügt -> Start, Anleitung und Optionen
+- Button Start leitet auf die index.html Seite weiter
+- Anbindung zu style.css erstellt
+- Seiteninhalt zentriert
+(- style.css erstellt, Design für Buttons hinzugefügt)
+(- Startbild für das erste Level erstellt und mittels Javascript eingebunden. 
+   Es wird angezeigt, bevor das Spiel beginnt)
+(- Bild für start.html erstellt und eingebunden)
+(- Design der Buttons geändert)
+(- Schriftart Calibri ausgewählt)
+
+
+15 November 2015
+- article-tags bei start.html hinzugefügt
+- Schriftgröße und Farbe des Textfelds geändert (Javascript)
+- Hintergrundfarbe des Textfeld-Canvas in weiß geändert, damit man den Text besser lesen kann
+(- finales Bild für das erste Level erstellt. Es gibt mehr Gegenstände zum anklicken.)
+(- Hintergrundbild von start.html von 800px auf 1300px vergrößert, damit es auf verschiedenen
+   Displaygrößen vollständig sichtbar ist)
+(- verbessertes Bild für das Inventar, Spalten sind größer)
+(- Hintergrundfarbe silber)
+(- Schriftgröße und Farbe für header hinzugefügt)
+(- Design der Buttons geändert)
+
+
+17 November 2015
+- Seite anleitung.html erstellt
+- Text für die Anleitung geschrieben
+- 2 Buttons erstellt, Start und Zurück
+- Weiterleitung zur neuen Seite durch Button Anleitung erstellt
+(- Schrift für p und h1 geändert)
+
+
+19 November 2015
+- Codierung und Internationalisierung hinzugefügt
+
+
+30 November 2015
+- bei start.html die Buttons in eine Tabelle abgelegt
+- footer hinzugefügt
+- main-tag und nav-tag hinzugefügt, article-tag gelöscht
+(- Tabellengröße angepasst)
+
+
 
 === Kommentar Alpers, nov 27 ===
 
