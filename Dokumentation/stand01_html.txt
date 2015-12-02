@@ -78,9 +78,18 @@ Umsetzung:
 - bei start.html die Buttons in eine Tabelle abgelegt
 - footer hinzugefügt
 - main-tag und nav-tag hinzugefügt, article-tag gelöscht
+- meta-tag description erstellt
 (- Tabellengröße angepasst)
 
 
+02 Dezember 2015
+- meta-tag keywords hinzugefügt
+- bei anleitung.html wurden folgende Tags hinzugefügt: meta, main, article, section, details, summary, footer
+- die Anleitung ist in drei Abschnitte unterteilt: Story, Steuerung und Ziel
+- die einzelnen Abschnitte sind in detail-tags, die detail-tags sind bereits geöffnet,
+  damit man die Anleitung sofort lesen kann
+- die 2 Buttons befinden sich im nav-tag, sie sind nebeneinander in einer Tabelle angeordnet
+(- einige Schriftgrößen in css angepasst)
 
 === Kommentar Alpers, nov 27 ===
 

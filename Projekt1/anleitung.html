@@ -6,33 +6,62 @@
 		<meta charset=utf-8>
 		<link href="style.css" rel="stylesheet">
 		<title>Escape The Room - Anleitung</title>
+		<meta name="keywords" content="Escape The Room, PRG, Media Systems, Projekt A, HTML, CSS, JavaScript">
+		<meta name="description" content="Escape The Room, das Projekt A zur Veranstaltung 'Einführung in die Programmierung'">
 	</head>
 	<body>
 		<center>
-		<br>
-		<br>
-		<header>Escape The Room</header>
-		<br>
-		<article>
-			<main>
+		<header>
+			Escape The Room
+		</header>
+		<main>
+			<article>
 				<h1>Anleitung</h1>
-				<p>Du wachst alleine in einem dir fremdem Raum auf. Die Tür ist verschlossen.</p>
-				<p>Versuche durch das Klicken auf die verschiedenen Objekte im Raum einen</p>
-				<p>Weg nach draußen zu finden. Du kannst versteckte Objekte aufsammeln, die</p>
-				<p>dir dabei helfen können. Sobald du ein Objekt in deinem Inventar hast,</p>
-				<p>kannst du auf den Gegenstand klicken, um das Objekt dort zu verwenden.</p>
-				<p>Viel Spaß dabei!</p>
-				<form action="index.html" method="get">
-					<button class="mybuttons">Start</button>
-				</form>
-				<br>
-				<form action="start.html" method="get">
-					<button class="mybuttons">Zurück</button>
-				</form>
-
-			</main>
-		</article>
+				<section>
+					<details open>
+						<summary>Story</summary>
+						<p>Du wachst alleine in einem dir fremdem Raum auf. Die Tür ist verschlossen.</p>
+					</details>
+				</section>
+				<section>
+					<details open>
+						<summary>Steuerung</summary>
+						<p>Klicke mit der rechten Maustaste auf die verschiedenen Objekte im Raum.</p>
+						<p>Im Textfeld werden dir Nachrichten zu den einzelnen Objekten eingeblendet</p>
+						<p>Du kannst versteckte Gegenstände finden, die dir im Inventarfeld angezeigt</p>
+						<p>werden. Diese können dir dabei helfen, den Raum zu verlassen.</p>
+					</details>
+				</section>
+				<section>
+					<details open>
+						<summary>Ziel</summary>
+						<p>Finde so schnell wie möglich einen Weg nach draußen.</p>
+					</details>
+				</section>
+				<h1>Viel Spaß!</h1>
+			</article>
+		</main>
+			<nav>
+				<table>
+					<tr>
+						<td>
+							<form action="index.html" method="get">
+								<button class="mybuttons">Start</button>
+							</form>
+						</td>
+						<td>
+							<form action="start.html" method="get">
+								<button class="mybuttons">Zurück</button>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</nav>	
+		<footer>
+			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
+		</footer>
 		</center		
 		<script type="text/javascript" src='game.js'></script>
 	</body>
+	
 </html>
