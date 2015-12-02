@@ -1,5 +1,17 @@
 ﻿/* Michael Z.
 
++++ 02-12-2015 +++
+Textreaktionen verbessert, so dass wenn man einen Schlüssel bspw. bereits hat nicht weiterhin angezeigt wird, dass er gefunden wird, wenn man im entsprechenden Bereich klickt.
+Fehlende Umlaute richtig eingebaut.
+Textüberlappung in verschiedene Zeilen aufgeteilt (Drei Zeilen passen gut ins derzeitige Design, also können wir etwas längere Texte schreiben).
+
+*Next up: 
+Wir sollten bald besprechen, was passieren soll, wenn man den Raum verlässt.
+Außerdem für alle Clickzonen Texte hinzufügen und möglicherweise Schlüssel anders positionieren (auf jeden Fall :))
+
+---
+
+
 PHP/JavaScripter-Anteil: Legen Sie hier (jeweils in einem kurzen Satz) fest, welche Funktionalitäten die Anwendung beinhalten
 soll. Sie werden dabei feststellen, dass manche Funktionalitäten tatsächlich nur in Form von mehreren Teilfunktionalitäten
 umgesetzt werden kann, aber das ist vollkommen in Ordnung; in diesen Fällen notieren Sie jede Teilfunktionalität zu der
