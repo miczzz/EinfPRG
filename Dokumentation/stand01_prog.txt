@@ -1,4 +1,4 @@
-﻿/* Michael Ziesemann
+﻿/* Michael Z.
 
 PHP/JavaScripter-Anteil: Legen Sie hier (jeweils in einem kurzen Satz) fest, welche Funktionalitäten die Anwendung beinhalten
 soll. Sie werden dabei feststellen, dass manche Funktionalitäten tatsächlich nur in Form von mehreren Teilfunktionalitäten

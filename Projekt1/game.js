@@ -80,13 +80,19 @@ function start()
 function changeText()
 {
  	if(currentClickZone == "Bild"){
-	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gefällt dir das Bild nicht, du kannst aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 25);
+	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gef\xE4llt dir das Bild nicht, du kannst", 25, 25);
+	textfeld_ctx.fillText("aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 45);
 	} 
 
 	if(currentClickZone == "KommodeLinks"){
-	textfeld_ctx.fillText("Du \xF6ffnest die Schubladen...und la-di-da du findest einen Schl\xFCssel!", 25, 25);
+		if(hasKey==0){
+	textfeld_ctx.fillText("Du \xF6ffnest die Schubladen...und du findest einen Schl\xFCssel!", 25, 25);
 	hasKey = 1;
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
+		}
+		else if(hasKey==1){
+		textfeld_ctx.fillText("Au\xDFer dem Schl\xFCssel ist hier nichts besonderes...und den hast du schon aufgehoben!", 25, 25);
+		}
 
 	} 
 	
@@ -107,7 +113,7 @@ function changeText()
 		textfeld_ctx.fillText("Der Schl\xFCssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
 		}
 		if(hasRightKey==1){
-		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Glück kaum fassen und genießt die Freiheit!", 25, 25);
+		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Gl\xFCck kaum fassen und genie\xDFt die Freiheit!", 25, 25);
 		}
 	}
 	
@@ -115,10 +121,13 @@ function changeText()
 	if(hasKey==0){
 	textfeld_ctx.fillText("Die verdammte Kommode ist abgeschlossen!", 25, 25);
 	}
-		else if(hasKey==1){
+		if(hasKey==1&&hasRightKey==0){
 		hasRightKey=1;
-		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du findest einen neuen Schl\xFCssel!", 25, 25);
+		textfeld_ctx.fillText("Du \xF6ffnest die Kommode mit dem Schl\xFCssel...und du findest einen neuen Schl\xFCssel!", 25, 25);
 		schluessel2_ctx.drawImage(schluesselgrafik2, 0,0);
+		}
+		else if(hasKey==1&&hasRightKey==1){
+		textfeld_ctx.fillText("Du hast die Kommode schon durchsucht und dabei einen Schl\xFCssel gefunden...auf zur T\xFCr!", 25, 25);
 		}
 	}
 	
