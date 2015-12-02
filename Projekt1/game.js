@@ -82,6 +82,7 @@ function changeText()
  	if(currentClickZone == "Bild"){
 	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gef\xE4llt dir das Bild nicht, du kannst", 25, 25);
 	textfeld_ctx.fillText("aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 45);
+	textfeld_ctx.fillText("Test dritte Zeile gut lesbar? Ja, kann man sagen.", 25, 65);
 	} 
 
 	if(currentClickZone == "KommodeLinks"){
