@@ -79,10 +79,33 @@ function start()
 
 function changeText()
 {
+
+ 	if(currentClickZone == "Fenster"){
+	textfeld_ctx.fillText("Du versuchst das Fenster zu \xF6ffnen, es ist aber fest verriegelt.", 25, 25);
+	textfeld_ctx.fillText("So kommst du hier nicht raus.", 25, 45);
+	} 
+	
+	if(currentClickZone == "Pflanze"){
+	textfeld_ctx.fillText("Eine Pflanze, die offensichtlich genug Wasser erh\xE4lt und gedeiht.", 25, 25);
+	} 
+	
+	if(currentClickZone == "Pflanzentopf"){
+	textfeld_ctx.fillText("Du gr\xE4bst in der Erde (ja, so verzweifelt bist du), kannst aber nichts finden.", 25, 25);
+	} 
+
  	if(currentClickZone == "Bild"){
 	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gef\xE4llt dir das Bild nicht, du kannst", 25, 25);
 	textfeld_ctx.fillText("aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 45);
 	textfeld_ctx.fillText("Test dritte Zeile gut lesbar? Ja, kann man sagen.", 25, 65);
+	} 
+	
+	if(currentClickZone == "Obstschale"){
+	textfeld_ctx.fillText("Platzhalter Obstschale", 25, 25);
+	} 
+	
+	if(currentClickZone == "Teppich"){
+	textfeld_ctx.fillText("Du hebst den Teppich an um darunter zu schauen, das ist immerhin ein h\xE4ufiges", 25, 25);
+	textfeld_ctx.fillText("Versteck von Schl\xFCsseln. Au\xDFer Staub findest du hier aber nichts.", 25, 45);
 	} 
 
 	if(currentClickZone == "KommodeLinks"){
@@ -94,15 +117,62 @@ function changeText()
 		else if(hasKey==1){
 		textfeld_ctx.fillText("Au\xDFer dem Schl\xFCssel ist hier nichts besonderes...und den hast du schon aufgehoben!", 25, 25);
 		}
-
 	} 
+	
+	if(currentClickZone == "Regal1"){
+	textfeld_ctx.fillText("Platzhalter Regal1", 25, 25);
+	}
+		if(currentClickZone == "Regal2"){
+	textfeld_ctx.fillText("Platzhalter Regal2", 25, 25);
+	}
+		if(currentClickZone == "Regal3"){
+	textfeld_ctx.fillText("Platzhalter Regal3", 25, 25);
+	}
+		if(currentClickZone == "Regal4"){
+	textfeld_ctx.fillText("Platzhalter Regal4", 25, 25);
+	}
+		if(currentClickZone == "Regal5"){
+	textfeld_ctx.fillText("Platzhalter Regal5", 25, 25);
+	}
+		if(currentClickZone == "Regal6"){
+	textfeld_ctx.fillText("Platzhalter Regal6", 25, 25);
+	}
+		if(currentClickZone == "Regal7"){
+	textfeld_ctx.fillText("Platzhalter Regal7", 25, 25);
+	}
+		if(currentClickZone == "Regal8"){
+	textfeld_ctx.fillText("Platzhalter Regal8", 25, 25);
+	}
+		if(currentClickZone == "Regal9"){
+	textfeld_ctx.fillText("Platzhalter Regal9", 25, 25);
+	}
+		if(currentClickZone == "Regal10"){
+	textfeld_ctx.fillText("Platzhalter Regal10", 25, 25);
+	}
+		if(currentClickZone == "Regal11"){
+	textfeld_ctx.fillText("Platzhalter Regal11", 25, 25);
+	}
+		if(currentClickZone == "Regal12"){
+	textfeld_ctx.fillText("Platzhalter Regal12", 25, 25);
+	}
+	
+	
 	
 	if(currentClickZone == "Inventar1"){
 		if(hasKey==0){
-	textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
-	}
+		textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
+		}
 		if(hasKey==1){
 		textfeld_ctx.fillText("Ja! Du hast den Schl\xFCssel gefunden!", 25, 25);
+		}
+	} 	
+	
+	if(currentClickZone == "Inventar2"){
+		if(hasRightKey==0){
+		textfeld_ctx.fillText("Dein Inventar ist leer.", 25, 25);
+		}
+		if(hasRightKey==1){
+		textfeld_ctx.fillText("Ein zweiter Schl\xFCssel, der dich hoffentlich hier rausf\xFChrt!", 25, 25);
 		}
 	} 	
 
