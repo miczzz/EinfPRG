@@ -1,14 +1,25 @@
 ﻿/* Michael Z.
 
+*Next up: 
+Wir sollten bald besprechen, was passieren soll, wenn man den Raum verlässt.
+Außerdem für alle Clickzonen die mehr oder minder finalen Texte hinzufügen und dann auch den/die Schlüssel anders positionieren (auf jeden Fall :))
+
+
++++ 05-12-2015 +++
+- Programm so geändert, dass man die Klickzonen erst bedienen kann, wenn man auf Start drückt.
+Dazu wird die visibility der CSS-Elemente Standardmäßig auf hidden gesetzt und dann bei der Start-Methode auf visible geändert.
+So ähnlich durch querySelectors lassen sich dann auch andere CSS-Elemente recht einfach innerhalb JavaScript, also während des Spiels, ändern.
+- Blaue Ränder der Clickzonen mal ausgeblendet, so wirkt es direkt wie ein richtige(re)s Spiel :)
+- Bei Klick auf alle Clickzonen wird jetzt ein Text eingeblendet, wenn auch größtenteils noch Platzhalter.
+
+
 +++ 02-12-2015 +++
 -Textreaktionen verbessert, so dass wenn man einen Schlüssel bspw. bereits hat nicht weiterhin angezeigt wird, 
 dass er gefunden wird, wenn man im entsprechenden Bereich klickt.
 -Fehlende Umlaute richtig eingebaut.
 -Textüberlappung in verschiedene Zeilen aufgeteilt (Drei Zeilen passen gut ins derzeitige Design, also können wir etwas längere Texte schreiben).
 
-*Next up: 
-Wir sollten bald besprechen, was passieren soll, wenn man den Raum verlässt.
-Außerdem für alle Clickzonen Texte hinzufügen und möglicherweise Schlüssel anders positionieren (auf jeden Fall :))
+
 
 ---
 Initiale Idee zur Umsetzung:

@@ -1,20 +1,19 @@
-/*
-\xFC = ü
-\xF6 = ö
-\xE4 = ä
-\xDF = ß
+ï»¿/*
+\xFC = Ã¼
+\xF6 = Ã¶
+\xE4 = Ã¤
+\xDF = ÃŸ
 */
 
 init();
 
-var clickZones = document.getElementsByClassName('click-zone');
-var currentClickZone = "nowhere";
-var hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
-var hasRightKey = 0; // hat man den Türschlüssel gefunden?
 
-for (var i = 0; i < clickZones.length; i += 1) {
-    clickZones[i].addEventListener("click", click);
-}
+var clickZones = document.querySelectorAll(".click-zone");
+var currentClickZone = "nowhere";
+var hasKey = 0; // hat man den SchlÃ¼ssel gefunden? 0 = nein, 1 = ja
+var hasRightKey = 0; // hat man den TÃ¼rschlÃ¼ssel gefunden?
+
+
 
 function init()
 {
@@ -74,6 +73,14 @@ function start()
   background_ctx.drawImage(hintergrund, 0, 0);	// Hintergrundbild
   inventar_ctx.drawImage(inventarhg, 0,0);		// Inventarbild
   textfeld_ctx.fillText("Du wachst alleine in diesem Raum auf. Die T\xFCr ist verschlossen. Finde einen Weg hinaus.", 25, 25);
+	for (var i = 0; i < clickZones.length; i += 1) {
+		clickZones[i].addEventListener("click", click);
+		clickZones[i].style.visibility = "visible";
+	}
+	/*
+	Test, so lÃ¤sst sich ein CSS-Element direkt aufrufen und Ã¤ndern:
+	document.querySelector("header").style.color = "#5aF4F6";	
+	*/
 }
 
 
