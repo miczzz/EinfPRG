@@ -4,6 +4,10 @@
 Wir sollten bald besprechen, was passieren soll, wenn man den Raum verlässt.
 Außerdem für alle Clickzonen die mehr oder minder finalen Texte hinzufügen und dann auch den/die Schlüssel anders positionieren (auf jeden Fall :))
 
++++ 06-12-2015 +++
+- Startbutton wird jetzt zum Resetbutton nach dem ersten Klick.
+Somit braucht man den Browser nicht mehr neu zu laden um das Spiel von vorne zu beginnen.
+
 
 +++ 05-12-2015 +++
 - Programm so geändert, dass man die Klickzonen erst bedienen kann, wenn man auf Start drückt.
