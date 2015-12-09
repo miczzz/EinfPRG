@@ -14,49 +14,45 @@
 		<header>
 			Escape The Room
 		</header>
-		<main>
-			<article>
-				<h1>Anleitung</h1>
-				<section>
-					<details open>
-						<summary>Story</summary>
-						<p>Du wachst alleine in einem dir fremdem Raum auf. Die Tür ist verschlossen.</p>
-					</details>
-				</section>
-				<section>
-					<details open>
-						<summary>Steuerung</summary>
-						<p>Klicke mit der rechten Maustaste auf die verschiedenen Objekte im Raum.</p>
-						<p>Im Textfeld werden dir Nachrichten zu den einzelnen Objekten eingeblendet</p>
-						<p>Du kannst versteckte Gegenstände finden, die dir im Inventarfeld angezeigt</p>
-						<p>werden. Diese können dir dabei helfen, den Raum zu verlassen.</p>
-					</details>
-				</section>
-				<section>
-					<details open>
-						<summary>Ziel</summary>
-						<p>Finde so schnell wie möglich einen Weg nach draußen.</p>
-					</details>
-				</section>
-				<h1>Viel Spaß!</h1>
-			</article>
-		</main>
 			<nav>
 				<table>
 					<tr>
 						<td>
-							<form action="index.html" method="get">
-								<button class="mybuttons">Start</button>
-							</form>
+							<a href="index.html" id="start" class="mybuttons">----- Start -----</a>
 						</td>
 						<td>
-							<form action="start.html" method="get">
-								<button class="mybuttons">Zurück</button>
-							</form>
+							<a href="start.html" id="back" class="mybuttons">---- Zurück ----</a>
 						</td>
 					</tr>
 				</table>
-			</nav>	
+			</nav>
+		<main>
+			<article>
+				<h1>Anleitung</h1>
+				<section itemscope itemtype=http://schema.org/Game>
+					<details>
+						<summary>Story</summary>
+						<p>Du wachst alleine in einem dir fremden <span itemprop=gameLocation>Raum</span> auf. Die Tür ist verschlossen.</p>
+					</details>
+				</section>
+				<section>
+					<details>
+						<summary>Steuerung</summary>
+						<p>Klicke mit der rechten Maustaste auf die verschiedenen Objekte im Raum.</p>
+						<p>Im Textfeld werden dir Nachrichten zu den einzelnen Objekten eingeblendet.</p>
+						<p>Du kannst versteckte Gegenstände, wie z.B. einen <span itemprop=gameItem>Schlüssel</span> finden, die dir im</p>
+						<p>Inventarfeld angezeigt werden. Diese können dir dabei helfen, den Raum zu verlassen.</p>
+					</details>
+				</section>
+				<section>
+					<details>
+						<summary>Ziel</summary>
+						<p><span itemprop=quest>Finde so schnell wie möglich einen Weg nach draußen.</span></p>
+					</details>
+				</section>
+				<h1>Viel Spaß!</h1>
+			</article>
+		</main>	
 		<footer>
 			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
 		</footer>

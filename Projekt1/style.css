@@ -2,11 +2,10 @@ table, th, td {
     border-collapse: collapse;
 }
 th, td {
-    padding: 15px;
+    padding: 25px;
 }
 
 body {
-    
 	background-image: url(images/startbild.png);
 	background-color: silver;
 	background-repeat: no-repeat;
