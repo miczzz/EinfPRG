@@ -1,5 +1,11 @@
 ﻿Anh-Thu Nguyen (2171169)
 
+Aktueller Stand:
+Die Seiten start.html und anleitung.html sind soweit fertig.
+Als nächstest soll die Seite mit den Optionen erstellt werden und evtl. ein Formular zum registrieren, damit
+man seinen aktuellen Spielstand speichern kann
+
+
 Idee:
 
 1.  Ansicht: Name des Spiels, Menü mit den Optionen "Spiel starten", "Anleitung" und "Optionen"
