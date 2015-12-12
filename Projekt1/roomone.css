@@ -3,18 +3,63 @@ header{
 	font-size: 50px;
 	font-weight: bold;
 	color: #5aa4d6;
+	text-align: center;
 }
 body {
 	background-color: silver;
 }
-.mybuttons {
+
+#background_canvas{
+	position: absolute;
+	top: 117px;
+	left: 8px;
+}
+
+#inventar{
+	background-color: white;
+	position: absolute;
+	top: 117px;
+	left: 832px;
+}
+
+#textfeld{
+	background-color: white;
+	position: absolute;
+	top: 541px;
+	left: 8px;
+}
+
+#schluessel{
+	position: absolute;
+	top: 235px;
+	left: 870px;
+}
+
+#schluessel2{
+	position: absolute;
+	top: 338px;
+	left: 870px;
+}
+
+#startButton {
 	text-align: center;
-	width: 150px;
+	width: 120px;
 	font-family: Calibri;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 25px;
 	background: #5aa4d6;
-	padding: 10px 10px 10px 10px;
+	padding: 7px 12px 7px 12px;
+	text-decoration: none;
+	cursor: pointer;
+}
+#beenden{
+	text-align: center;
+	width: 200px;
+	font-family: Calibri;
+	color: #ffffff;
+	font-size: 25px;
+	background: #5aa4d6;
+	padding: 7px 12px 7px 12px;
 	text-decoration: none;
 	cursor: pointer;
 }

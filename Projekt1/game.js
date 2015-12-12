@@ -7,7 +7,6 @@
 
 init();
 
-
 var clickZones = document.querySelectorAll(".click-zone");
 var currentClickZone = "nowhere";
 var hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
@@ -17,57 +16,46 @@ var clickCounter = 0;
 
 function init()
 {
-  background_canvas = document.getElementById('background_canvas');
-  background_ctx = background_canvas.getContext('2d');
-  main_canvas = document.getElementById('main_canvas');
-  main_ctx = main_canvas.getContext('2d');
+	background_canvas = document.getElementById('background_canvas');
+	background_ctx = background_canvas.getContext('2d');
+	
+	inventar = document.getElementById('inventar');
+	inventar_ctx = inventar.getContext('2d');
+  
+	textfeld = document.getElementById('textfeld');
+	textfeld_ctx = textfeld.getContext('2d');
+	textfeld_ctx.font = '15pt Calibri';
+	textfeld_ctx.fillStyle = '#5aa4d6';
+	
+	schluessel = document.getElementById('schluessel');
+	schluessel_ctx = schluessel.getContext('2d');  
 
-  inventar = document.getElementById('inventar');
-  inventar_ctx = inventar.getContext('2d');
+	schluessel2 = document.getElementById('schluessel2');
+	schluessel2_ctx = schluessel2.getContext('2d');  
   
-  textfeld = document.getElementById('textfeld');
-  textfeld_ctx = textfeld.getContext('2d');
-  textfeld_ctx.font = '15pt Calibri';
-  textfeld_ctx.fillStyle = '#5aa4d6';
+	load_media();
   
-  schluessel = document.getElementById('schluessel');
-  schluessel_ctx = schluessel.getContext('2d');  
-
-  schluessel2 = document.getElementById('schluessel2');
-  schluessel2_ctx = schluessel2.getContext('2d');  
-  
-  load_media();
-  
-  leveleins.addEventListener("load", menu, false);
+	leveleins.addEventListener("load", menu, false);
 }
 
-function load_media() // alle Bilder laden
+function load_media()
 {
-  leveleins = new Image();	
-  leveleins.src = 'images/leveleins.png';
-  hintergrund = new Image();	// Hintergrundbild laden
-  hintergrund.src = 'images/hintergrund.png';
-  inventarhg = new Image();	
-  inventarhg.src = 'images/inventar.png';
-  schluesselgrafik = new Image();
-  schluesselgrafik.src = 'images/key.png'; 
-  schluesselgrafik2 = new Image();
-  schluesselgrafik2.src = 'images/key2.png'; 
-  
+	leveleins = new Image();	
+	leveleins.src = 'images/leveleins.png';
+	hintergrund = new Image();	// Hintergrundbild laden
+	hintergrund.src = 'images/hintergrund.png';
+	inventarhg = new Image();	
+	inventarhg.src = 'images/inventar.png';
+	schluesselgrafik = new Image();
+	schluesselgrafik.src = 'images/key.png'; 
+	schluesselgrafik2 = new Image();
+	schluesselgrafik2.src = 'images/key2.png'; 
  }
  
-function menu(){
+ function menu(){
   background_ctx.drawImage(leveleins, 0, 0);
 }
  
-function mouse(e)		// Koordinaten der Maus
-{
-  var x = e.pageX;
-  var y = e.pageY;
-  document.getElementById('x').innerHTML = x;
-  document.getElementById('y').innerHTML = y;
-}
-
 function start()
 {
   //Für Reset
