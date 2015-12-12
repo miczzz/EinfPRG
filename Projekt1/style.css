@@ -5,6 +5,11 @@ th, td {
     padding: 25px;
 }
 
+img{
+	width: 240x;
+	height: 160px;
+}
+
 body {
 	background-image: url(images/startbild.png);
 	background-color: silver;
@@ -34,6 +39,9 @@ summary{
 	font-weight: bold;
 }
 
+figurecaption{
+	font-size: 25px;
+}
 .mybuttons {
 	text-align: center;
 	width: 200px;
