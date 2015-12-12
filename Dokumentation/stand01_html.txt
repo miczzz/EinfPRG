@@ -1,7 +1,9 @@
 ﻿Anh-Thu Nguyen (2171169)
 
 Aktueller Stand:
-Die Seiten start.html und anleitung.html sind soweit fertig.
+Die Seiten start.html und anleitung.html sind soweit fertig. Eine Übersicht der verfügbaren Levels wird auf der 
+Startseite angezeigt, die Anleitung kann gelesen werden und die Navigation zwischen den Seiten funktioniert.
+
 Als nächstest soll die Seite mit den Optionen erstellt werden und evtl. ein Formular zum registrieren, damit
 man seinen aktuellen Spielstand speichern kann
 
@@ -96,6 +98,14 @@ Umsetzung:
   damit man die Anleitung sofort lesen kann
 - die 2 Buttons befinden sich im nav-tag, sie sind nebeneinander in einer Tabelle angeordnet
 (- einige Schriftgrößen in css angepasst)
+
+09 Dezember 2015
+- Microdata erstellt für die Anleitung mit dem Schema http://schema.org/Game
+- Buttons zum navigieren durch a href ersetzt
+
+12 Dezember 2015
+- im aside Container eine Übersicht der Levels mit figure und figurecaption erstellt
+(- Bild für das zweite Level erstellt)
 
 === Kommentar Alpers, nov 27 ===
 
