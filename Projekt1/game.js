@@ -12,7 +12,7 @@ var clickZones = document.querySelectorAll(".click-zone");
 var currentClickZone = "nowhere";
 var hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
 var hasRightKey = 0; // hat man den Türschlüssel gefunden?
-
+var clickCounter = 0;
 
 
 function init()
@@ -77,8 +77,9 @@ function start()
   textfeld_ctx.clearRect(0, 0, 800, 75); // Text vom Textfeld löschen
   //Variablen auf Default-Werte zurücksetzen
   currentClickZone = "nowhere";
-  hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
-  hasRightKey = 0; // hat man den Türschlüssel gefunden?
+  hasKey = 0;
+  hasRightKey = 0; 
+  clickCounter = 0;
   // Reset Ende  
   
   background_ctx.drawImage(hintergrund, 0, 0);	// Hintergrundbild
@@ -195,6 +196,7 @@ function changeText()
 		}
 		if(hasRightKey==1){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Gl\xFCck kaum fassen und genie\xDFt die Freiheit!", 25, 25);
+		textfeld_ctx.fillText("Clicks: " + clickCounter, 25, 45);
 		}
 	}	
 	if(currentClickZone == "KommodeRechts"){
@@ -215,6 +217,7 @@ function changeText()
 
 
 function click() {
+	clickCounter++;
 	currentClickZone = this.dataset.zone;
  // alert('Clicked: ' + this.dataset.zone);
 	// um das Textfeld erstmal zu resetten:
