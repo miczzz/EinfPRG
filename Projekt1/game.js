@@ -185,6 +185,7 @@ function changeText()
 		if(hasRightKey==1){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Gl\xFCck kaum fassen und genie\xDFt die Freiheit!", 25, 25);
 		textfeld_ctx.fillText("Clicks: " + clickCounter, 25, 45);
+		level2.style.visibility = "visible";
 		}
 	}	
 	if(currentClickZone == "KommodeRechts"){

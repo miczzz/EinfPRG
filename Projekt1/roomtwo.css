@@ -63,38 +63,26 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 }
-#level2{
-	visibility: hidden;
-	text-align: center;
-	width: 200px;
-	font-family: Calibri;
-	color: #ffffff;
-	font-size: 25px;
-	background: #5aa4d6;
-	padding: 7px 12px 7px 12px;
-	text-decoration: none;
-	cursor: pointer;
-}
 
 .click-zone {
 	visibility: hidden;
     position: absolute;
     cursor: pointer;
     z-index: 2;
-/*   border: 1px solid blue; */
+    border: 1px solid blue; 
 }
 /* Fenster */
 .click-zone.a {
-	left: 13px;
-	top: 173px;
-	width: 106px;
-	height: 174px;
-	border-bottom-right-radius:75px;
+	left: 757px;
+	top: 169px;
+	width: 48px;
+	height: 213px;
+	border-bottom-left-radius:75px;
 }
 /* Tür */
 .click-zone.b {
-	left: 720px;
-	top: 202px;
+	left: 33px;
+	top: 192px;
 	width: 85px;
 	height: 287px;
 }
@@ -112,91 +100,93 @@ body {
 	width: 123px;
 	height: 94px;
 }
-/* rechte Kommode (mit Obst drauf) */
+/* Kranz/ */
 .click-zone.e {
-	left: 226px;
-	top: 300px;
-	width: 124px;
-	height: 118px;
+	left: 282px;
+	top: 131px;
+	width: 104px;
+	height: 89px;
 }
 /* Teppich */
 .click-zone.f {
-	left: 255px;
-	top: 452px;
-	width: 314px;
-	height: 72px;
+	left: 165px;
+	top: 449px;
+	width: 510px;
+	height: 64px;
 }
-/* Pflanzentopf */
+/* Stiefel1 */
 .click-zone.g {
-	left: 145px;
-	top: 341px;
-	width: 69px;
-	height: 81px;
-}
-/* Regal 1 (Bücher1)*/
-.click-zone.h {
-	left: 363px;
-	top: 152px;
-	width: 93px;
-	height: 54px;
-}
-/* Regal 2 (Tassen) */
-.click-zone.i {
-	left: 466px;
-	top: 157px;
-	width: 99px;
-	height: 53px;
-}
-/* Regal 3 (Uhr) */
-.click-zone.j {
-	left: 575px;
-	top: 153px;
-	width: 82px;
-	height: 55px;
-}
-/* Regal 4 (Bücher2) */
-.click-zone.k {
-	left: 363px;
-	top: 217px;
-	width: 95px;
-	height: 55px;
-}
-/* Regal 5 (Blume) */
-.click-zone.l {
-	left: 468px;
-	top: 217px;
-	width: 95px;
-	height: 53px;
-}
-/* Regal 6 (Bücher3) */
-.click-zone.m {
-	left: 574px;
-	top: 220px;
-	width: 84px;
-	height: 49px;
-}
-/* Regal 7 (Lampe) */
-.click-zone.n {
-	left: 367px;
-	top: 284px;
-	width: 83px;
-	height: 50px;
-}
-/* Regal 8 (Flaschen) */
-.click-zone.o {
-	left: 466px;
-	top: 284px;
-	width: 97px;
-	height: 54px;
-}
-/* Regal 9 (Ordner1) */
-.click-zone.p {
-	left: 574px;
-	top: 283px;
-	width: 85px;
+	left: 245px;
+	top: 257px;
+	width: 50px;
 	height: 51px;
 }
-/* Regal 10 (Bild) */
+/* Stiefel2 */
+.click-zone.h {
+	left: 298px;
+	top: 259px;
+	width: 44px;
+	height: 50px;
+}
+/* Stiefel3 */
+.click-zone.i {
+	left: 343px;
+	top: 257px;
+	width: 44px;
+	height: 53px;
+}
+/* Stiefel4 */
+.click-zone.j {
+	left: 391px;
+	top: 253px;
+	width: 39px;
+	height: 55px;
+}
+/* Feuer */
+.click-zone.k {
+	left: 283px;
+	top: 317px;
+	width: 87px;
+	height: 71px;
+}
+/* GeschenkLinks */
+.click-zone.l {
+	left: 417px;
+	top: 372px;
+	width: 65px;
+	height: 54px;
+}
+/* GeschenkRechts */
+.click-zone.m {
+	left: 491px;
+	top: 390px;
+	width: 63px;
+	height: 49px;
+}
+/* Stern */
+.click-zone.n {
+	left: 600px;
+	top: 159px;
+	width: 45px;
+	height: 47px;
+}
+/* Weihnachtsbaum */
+.click-zone.o {
+	left: 555px;
+	top: 231px;
+	width: 91px;
+	height: 175px;
+}
+/* Gardine */
+.click-zone.p {
+	left: 697px;
+	top: 147px;
+	width: 59px;
+	height: 214px;
+}
+
+/* unbenutzte:
+Regal 10 (Bild) */
 .click-zone.q {
 	left: 366px;
 	top: 345px;

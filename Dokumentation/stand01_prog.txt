@@ -1,8 +1,12 @@
 ﻿/* Michael Z.
 
 *Next up: 
-Wir sollten bald besprechen, was passieren soll, wenn man den Raum verlässt.
-Außerdem für alle Clickzonen die mehr oder minder finalen Texte hinzufügen und dann auch den/die Schlüssel anders positionieren (auf jeden Fall :))
+Level 2 Programmierung machen und Texte finalisieren.
+
+
++++ 14-12-15 +++
+Eingliederung von Level 2 begonnen sowie Clickzonen gesetzt (noch nicht perfekt).
+
 
 +++ 12-12-15 +++
 - Clickcounter hinzugefügt, der später als Highscore gespeichert werden kann.

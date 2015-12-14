@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=de>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<link href="roomtwo.css" rel="stylesheet">
+		<title>Escape The Room</title>
+	</head>
+	<body>
+		<header>
+			Escape The Room
+		</header>
+		<main>
+			<input type=button id="startButton" value="Start" onclick=start()>
+			<a href="start.html" id="beenden">Beenden</a>
+
+			<canvas id="background_canvas" width="800" height="400" style="border:1px solid #d3d3d3;">
+				Dein Browser unterstützt nicht das HTML5 Canvas Tag.
+			</canvas>
+		
+			<canvas id="inventar" width="150px" height="400px" style="border:1px solid #d3d3d3;"></canvas> 
+		
+			<canvas id="textfeld" width="800px" height="75px" style="border:1px solid #d3d3d3;"></canvas> 
+		
+			<canvas id="schluessel" width="70px" height='63px'></canvas> 
+		
+			<canvas id="schluessel2" width="70px" height='63px'></canvas> 
+		</main>
+		
+		<div class="click-zone a" data-zone="Fenster"></div>
+		<div class="click-zone b" data-zone="Tuer"></div>
+		<div class="click-zone c" data-zone="Inventar1"></div>
+		<div class="click-zone d" data-zone="Inventar2"></div>
+		<div class="click-zone e" data-zone="Kranz"></div>
+		<div class="click-zone f" data-zone="Teppich"></div>
+		<div class="click-zone g" data-zone="Stiefel1"></div>
+		<div class="click-zone h" data-zone="Stiefel2"></div>
+		<div class="click-zone i" data-zone="Stiefel3"></div>
+		<div class="click-zone j" data-zone="Stiefel4"></div>
+		<div class="click-zone k" data-zone="Feuer"></div>
+		<div class="click-zone l" data-zone="GeschenkLinks"></div>
+		<div class="click-zone m" data-zone="GeschenkRechts"></div>
+		<div class="click-zone n" data-zone="Stern"></div>
+		<div class="click-zone o" data-zone="Weihnachtsbaum"></div>
+		<div class="click-zone p" data-zone="Gardine"></div>
+
+			
+	<script type="text/javascript" src='game2.js'></script>
+	</body>
+</html>
