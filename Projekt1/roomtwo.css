@@ -85,6 +85,7 @@ body {
 	top: 192px;
 	width: 85px;
 	height: 287px;
+	border-bottom-right-radius: 75px;
 }
 /* Inventar 1 */
 .click-zone.c {
@@ -102,17 +103,20 @@ body {
 }
 /* Kranz/ */
 .click-zone.e {
-	left: 282px;
+	left: 285px;
 	top: 131px;
-	width: 104px;
+	width: 94px;
 	height: 89px;
+	border-radius: 75px;
 }
 /* Teppich */
 .click-zone.f {
 	left: 165px;
-	top: 449px;
-	width: 510px;
-	height: 64px;
+	top: 450px;
+	width: 490px;
+	height: 66px;
+	border-top-left-radius: 75px;
+	border-top-right-radius:75px;
 }
 /* Stiefel1 */
 .click-zone.g {
@@ -160,29 +164,55 @@ body {
 .click-zone.m {
 	left: 491px;
 	top: 390px;
-	width: 63px;
+	width: 57px;
 	height: 49px;
 }
 /* Stern */
 .click-zone.n {
-	left: 600px;
-	top: 159px;
+	left: 593px;
+	top: 160px;
 	width: 45px;
-	height: 47px;
+	height: 40px;
 }
 /* Weihnachtsbaum */
 .click-zone.o {
-	left: 555px;
-	top: 231px;
+	left: 575px;
+	top: 201px;
 	width: 91px;
-	height: 175px;
+	height: 35px;
+	border-top-left-radius:75px;
+	border-top-right-radius:75px;
+}
+.click-zone.o2 {
+	left: 575px;
+	top: 236px;
+	width: 91px;
+	height: 55px;
+	border-top-left-radius:75px;
+	border-top-right-radius:75px;
+}
+.click-zone.o3 {
+	left: 555px;
+	top: 291px;
+	width: 131px;
+	height: 65px;
+	border-top-left-radius:75px;
+	border-top-right-radius:75px;
+}
+.click-zone.o4 {
+	left: 555px;
+	top: 356px;
+	width: 131px;
+	height: 55px;
+
 }
 /* Gardine */
 .click-zone.p {
 	left: 697px;
-	top: 147px;
+	top: 150px;
 	width: 59px;
 	height: 214px;
+	border-bottom-left-radius:75px;
 }
 
 /* unbenutzte:
