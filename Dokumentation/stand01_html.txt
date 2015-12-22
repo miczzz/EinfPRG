@@ -3,8 +3,9 @@
 Aktueller Stand:
 Die Seiten start.html und anleitung.html sind soweit fertig. Eine Übersicht der verfügbaren Levels wird auf der 
 Startseite angezeigt, die Anleitung kann gelesen werden und die Navigation zwischen den Seiten funktioniert.
-
-Als nächstest soll die Seite mit den Optionen erstellt werden und evtl. ein Formular zum registrieren, damit
+Bei optionen.html kann man die Musik und Effekte durch Radio Buttons an oder ausschalten.
+Auf index.html kann das Spiel gespielt werden, alle benötigten Buttons und Canvas sind vorhanden.
+Als nächstest evtl. ein Formular zum registrieren erstellt werden, damit
 man seinen aktuellen Spielstand speichern kann
 
 
@@ -105,7 +106,14 @@ Umsetzung:
 
 12 Dezember 2015
 - im aside Container eine Übersicht der Levels mit figure und figurecaption erstellt
+- beenden button hinzugefügt
+- index.html neu strukturiert, div container entfernt
 (- Bild für das zweite Level erstellt)
+(- Bild für 2 Schlüssel erstellt)
+
+22 Dezember 2015
+- optionen.html erstellt
+- durch Radio Buttons können die Musik und Effekte an oder ausgeschaltet werden
 
 === Kommentar Alpers, nov 27 ===
 
