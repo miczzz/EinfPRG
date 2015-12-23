@@ -1,8 +1,10 @@
 ﻿/* Michael Z.
 
-*Next up: 
-Level 2 Programmierung machen und Texte finalisieren.
 
+
++++ 23-12-15 +++
+Level 2 Programmierung abgeschlossen. Pünktlich zu Weihnachten.
+Einige (alberne) Sounds hinzugefügt. Alle Platzhalter durch richtige Texte ausgetauscht.
 
 +++ 14-12-15 +++
 Eingliederung von Level 2 begonnen sowie Clickzonen gesetzt (noch nicht perfekt).

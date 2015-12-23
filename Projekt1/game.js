@@ -12,6 +12,7 @@ var currentClickZone = "nowhere";
 var hasKey = 0; // hat man den Schlüssel gefunden? 0 = nein, 1 = ja
 var hasRightKey = 0; // hat man den Türschlüssel gefunden?
 var clickCounter = 0;
+var sndName = "none";
 
 
 function init()
@@ -102,60 +103,66 @@ function changeText()
  	if(currentClickZone == "Bild"){
 	textfeld_ctx.fillText("Du schaust dir das Bild an. Aus irgendeinem Grund gef\xE4llt dir das Bild nicht, du kannst", 25, 25);
 	textfeld_ctx.fillText("aber nicht sagen warum. Ansonsten entdeckst du nichts ungew\xF6hnliches.", 25, 45);
-	textfeld_ctx.fillText("Test dritte Zeile gut lesbar? Ja, kann man sagen.", 25, 65);
 	} 	
 	if(currentClickZone == "Obstschale"){
-	textfeld_ctx.fillText("Platzhalter Obstschale", 25, 25);
+	textfeld_ctx.fillText("Eine bunte Auswahl an Obstsorten. Du wirst wohl immerhin nicht allzu schnell", 25, 25);
+	textfeld_ctx.fillText("verhungern.", 25, 45);
 	} 	
 	if(currentClickZone == "Teppich"){
 	textfeld_ctx.fillText("Du hebst den Teppich an um darunter zu schauen, das ist immerhin ein h\xE4ufiges", 25, 25);
 	textfeld_ctx.fillText("Versteck von Schl\xFCsseln. Au\xDFer Staub findest du hier aber nichts.", 25, 45);
 	} 
 	if(currentClickZone == "KommodeLinks"){
-		if(hasKey==0){
-	textfeld_ctx.fillText("Du \xF6ffnest die Schubladen...und du findest einen Schl\xFCssel!", 25, 25);
+	textfeld_ctx.fillText("Du schaust in diese Kommode herein, hier sind bloß ein paar Pullover.", 25, 25);
+	textfeld_ctx.fillText("Die dem Aussehen nach seit Jahrzehnten niemand getragen hat.", 25, 45);
+	} 
+
+	if(currentClickZone == "Regal1"){
+	textfeld_ctx.fillText("Einige Bücher, darunter unter anderem 'Trockenobst im Herbst', 'Ein Urlaubsglück im", 25, 25);
+	textfeld_ctx.fillText("Sommer' und 'Pallisaden im Frühling'. Seltsame Titel...aber wo steckt der Wintertitel?", 25, 45);
+	}
+		if(currentClickZone == "Regal2"){
+	textfeld_ctx.fillText("Zwei Tassen mit Leopardenmuster. Eine Spinne hat sich in einer versteckt.", 25, 25);
+	}
+		if(currentClickZone == "Regal3"){
+	textfeld_ctx.fillText("Die Uhr ist offenbar stehengeblieben.", 25, 25);
+	}
+		if(currentClickZone == "Regal4"){
+	textfeld_ctx.fillText("Notizbücher zu verschiedenen Themen.", 25, 25);
+	}
+		if(currentClickZone == "Regal5"){
+			if(hasKey==0){
+	textfeld_ctx.fillText("Du hebst den Blumentopf an...und du findest einen Schl\xFCssel!", 25, 25);
 	hasKey = 1;
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
+	sndName = "pickup";
+	playSound();
 		}
 		else if(hasKey==1){
 		textfeld_ctx.fillText("Au\xDFer dem Schl\xFCssel ist hier nichts besonderes...und den hast du schon aufgehoben!", 25, 25);
 		}
-	} 	
-	if(currentClickZone == "Regal1"){
-	textfeld_ctx.fillText("Platzhalter Regal1", 25, 25);
-	}
-		if(currentClickZone == "Regal2"){
-	textfeld_ctx.fillText("Platzhalter Regal2", 25, 25);
-	}
-		if(currentClickZone == "Regal3"){
-	textfeld_ctx.fillText("Platzhalter Regal3", 25, 25);
-	}
-		if(currentClickZone == "Regal4"){
-	textfeld_ctx.fillText("Platzhalter Regal4", 25, 25);
-	}
-		if(currentClickZone == "Regal5"){
-	textfeld_ctx.fillText("Platzhalter Regal5", 25, 25);
 	}
 		if(currentClickZone == "Regal6"){
-	textfeld_ctx.fillText("Platzhalter Regal6", 25, 25);
+	textfeld_ctx.fillText("Staubige alte Wälzer.", 25, 25);
 	}
 		if(currentClickZone == "Regal7"){
-	textfeld_ctx.fillText("Platzhalter Regal7", 25, 25);
+	textfeld_ctx.fillText("Diese Lampe ist wahrscheinlich ein Erbstück.", 25, 25);
 	}
 		if(currentClickZone == "Regal8"){
-	textfeld_ctx.fillText("Platzhalter Regal8", 25, 25);
+	textfeld_ctx.fillText("Einige halb leere Flaschen mit obskuren Beschriftungen, die du kaum entziffern kannst.", 25, 25);
 	}
 		if(currentClickZone == "Regal9"){
-	textfeld_ctx.fillText("Platzhalter Regal9", 25, 25);
+	textfeld_ctx.fillText("'Gefangenenhaltung im 21. Jahrhundert: Ein Lach- und Lehrbuch'", 25, 25);
+	textfeld_ctx.fillText("...dieser Titel macht dir Angst.", 25, 45);
 	}
 		if(currentClickZone == "Regal10"){
-	textfeld_ctx.fillText("Platzhalter Regal10", 25, 25);
+	textfeld_ctx.fillText("Ein Bild von einem Boot. In 2D.", 25, 25);
 	}
 		if(currentClickZone == "Regal11"){
-	textfeld_ctx.fillText("Platzhalter Regal11", 25, 25);
+	textfeld_ctx.fillText("Ein Schmuckkästchen mit erlesenen...Plastikamuletten?!", 25, 25);
 	}
 		if(currentClickZone == "Regal12"){
-	textfeld_ctx.fillText("Platzhalter Regal12", 25, 25);
+	textfeld_ctx.fillText("Buchhaltung für Dummies.", 25, 25);
 	}	
 	
 	if(currentClickZone == "Inventar1"){
@@ -181,11 +188,15 @@ function changeText()
 		}
 		if(hasKey==1&&hasRightKey==0){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
+		sndName = "wrong";
+		playSound();
 		}
 		if(hasRightKey==1){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Gl\xFCck kaum fassen und genie\xDFt die Freiheit!", 25, 25);
 		textfeld_ctx.fillText("Clicks: " + clickCounter, 25, 45);
 		level2.style.visibility = "visible";
+		sndName = "won";
+		playSound();
 		}
 	}	
 	if(currentClickZone == "KommodeRechts"){
@@ -196,12 +207,30 @@ function changeText()
 		hasRightKey=1;
 		textfeld_ctx.fillText("Du \xF6ffnest die Kommode mit dem Schl\xFCssel...und du findest einen neuen Schl\xFCssel!", 25, 25);
 		schluessel2_ctx.drawImage(schluesselgrafik2, 0,0);
+		sndName = "pickup";
+		playSound();
 		}
 		else if(hasKey==1&&hasRightKey==1){
 		textfeld_ctx.fillText("Du hast die Kommode schon durchsucht und dabei einen Schl\xFCssel gefunden...auf zur T\xFCr!", 25, 25);
 		}
 	}
 	
+}
+
+function playSound() {
+
+if(sndName == "pickup"){
+	var snd = new Audio("sounds/pickup.wav"); 
+	}
+if(sndName == "won"){
+	var snd = new Audio("sounds/won.wav");
+	}	
+if(sndName == "wrong"){
+	var snd = new Audio("sounds/wrong.wav"); 
+	}
+snd.play();
+
+
 }
 
 
