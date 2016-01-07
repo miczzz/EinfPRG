@@ -1,12 +1,14 @@
 ﻿Anh-Thu Nguyen (2171169)
 
 Aktueller Stand:
-Die Seiten start.html und anleitung.html sind soweit fertig. Eine Übersicht der verfügbaren Levels wird auf der 
-Startseite angezeigt, die Anleitung kann gelesen werden und die Navigation zwischen den Seiten funktioniert.
-Bei optionen.html kann man die Musik und Effekte durch Radio Buttons an oder ausschalten.
 Auf index.html kann das Spiel gespielt werden, alle benötigten Buttons und Canvas sind vorhanden.
-Als nächstest evtl. ein Formular zum registrieren erstellt werden, damit
-man seinen aktuellen Spielstand speichern kann
+start.html ist die Startseite. Dort kann man auf die Buttons Start, Anleitung, Registrierung und Optionen klicken um 
+auf die anderen Seiten zu gelangen. Dadrunter ist eine Übersicht der bisher verfügbaren Levels zu sehen.
+Die verschiedenen Abschnitte der Anleitung können durch den Details-tag geöffnet werden, damit es übersichtlicher ist.
+Bei optionen.html kann man die Musik und Effekte durch Radio Buttons an oder ausschalten.
+Als letztes wurde registrierung.html erstellt. Eine Registrierung ist nötig, um sich evtl. auf einer Highscoreliste am
+Ende eintragen zu können oder um den Spielstand zu speichern.
+Als nächstest kommt auf der Startseite ein Feld fürs LogIn, das nach der Registrierung benutzt werden kann.
 
 
 Idee:
@@ -39,36 +41,18 @@ Umsetzung:
 - Anbindung zu Javascript erstellt
 
 
-05 November 2015
-(- Bild für das Spielfeld erstellt)
-(- Bild für das Inventarfeld erstellt)
-
-
 09 November 2015
 - Seite start.html erstellt
 - 3 Buttons hinzugefügt -> Start, Anleitung und Optionen
 - Button Start leitet auf die index.html Seite weiter
 - Anbindung zu style.css erstellt
 - Seiteninhalt zentriert
-(- style.css erstellt, Design für Buttons hinzugefügt)
-(- Startbild für das erste Level erstellt und mittels Javascript eingebunden. 
-   Es wird angezeigt, bevor das Spiel beginnt)
-(- Bild für start.html erstellt und eingebunden)
-(- Design der Buttons geändert)
-(- Schriftart Calibri ausgewählt)
 
 
 15 November 2015
 - article-tags bei start.html hinzugefügt
 - Schriftgröße und Farbe des Textfelds geändert (Javascript)
 - Hintergrundfarbe des Textfeld-Canvas in weiß geändert, damit man den Text besser lesen kann
-(- finales Bild für das erste Level erstellt. Es gibt mehr Gegenstände zum anklicken.)
-(- Hintergrundbild von start.html von 800px auf 1300px vergrößert, damit es auf verschiedenen
-   Displaygrößen vollständig sichtbar ist)
-(- verbessertes Bild für das Inventar, Spalten sind größer)
-(- Hintergrundfarbe silber)
-(- Schriftgröße und Farbe für header hinzugefügt)
-(- Design der Buttons geändert)
 
 
 17 November 2015
@@ -76,7 +60,6 @@ Umsetzung:
 - Text für die Anleitung geschrieben
 - 2 Buttons erstellt, Start und Zurück
 - Weiterleitung zur neuen Seite durch Button Anleitung erstellt
-(- Schrift für p und h1 geändert)
 
 
 19 November 2015
@@ -88,32 +71,39 @@ Umsetzung:
 - footer hinzugefügt
 - main-tag und nav-tag hinzugefügt, article-tag gelöscht
 - meta-tag description erstellt
-(- Tabellengröße angepasst)
 
 
 02 Dezember 2015
 - meta-tag keywords hinzugefügt
 - bei anleitung.html wurden folgende Tags hinzugefügt: meta, main, article, section, details, summary, footer
 - die Anleitung ist in drei Abschnitte unterteilt: Story, Steuerung und Ziel
-- die einzelnen Abschnitte sind in detail-tags, die detail-tags sind bereits geöffnet,
-  damit man die Anleitung sofort lesen kann
+- die einzelnen Abschnitte sind in detail-tags
 - die 2 Buttons befinden sich im nav-tag, sie sind nebeneinander in einer Tabelle angeordnet
-(- einige Schriftgrößen in css angepasst)
+
 
 09 Dezember 2015
 - Microdata erstellt für die Anleitung mit dem Schema http://schema.org/Game
 - Buttons zum navigieren durch a href ersetzt
 
+
 12 Dezember 2015
 - im aside Container eine Übersicht der Levels mit figure und figurecaption erstellt
-- beenden button hinzugefügt
+- beenden button hinzugefügt, um auf die Startseite zurückzugelangen
 - index.html neu strukturiert, div container entfernt
-(- Bild für das zweite Level erstellt)
-(- Bild für 2 Schlüssel erstellt)
+
 
 22 Dezember 2015
 - optionen.html erstellt
 - durch Radio Buttons können die Musik und Effekte an oder ausgeschaltet werden
+
+
+07 Januar 2015
+- registrierung.html erstellt
+- in dem Formular müssen Benutzername, Passwort, Email und Geburtsdatum eingetragen werden, um sich zu registrieren
+- registrierung ist notwendig für spätere Highscoreliste oder zum speichern des Spielstandes
+- durch eine Checkbox kann entschieden werden ob man einen Newletter erhalten will oder nicht
+
+
 
 === Kommentar Alpers, nov 27 ===
 
