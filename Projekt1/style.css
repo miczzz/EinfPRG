@@ -42,6 +42,11 @@ summary{
 figurecaption{
 	font-size: 25px;
 }
+
+form{
+	font-size: 18px;
+	font-weight: bold;
+}
 .mybuttons {
 	text-align: center;
 	width: 200px;
