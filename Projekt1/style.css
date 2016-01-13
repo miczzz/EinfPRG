@@ -47,6 +47,12 @@ form{
 	font-size: 18px;
 	font-weight: bold;
 }
+li{
+	font-size: 25px;
+	text-decoration: none;
+	list-style: none;
+
+}
 .mybuttons {
 	text-align: center;
 	width: 200px;

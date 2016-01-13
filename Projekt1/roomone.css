@@ -8,6 +8,9 @@ header{
 body {
 	background-color: silver;
 }
+li {
+  list-style: none;
+}
 
 #background_canvas{
 	position: absolute;

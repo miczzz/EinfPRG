@@ -8,11 +8,13 @@
 		<meta name="keywords" content="Escape The Room, PRG, Media Systems, Projekt A, HTML, CSS, JavaScript">
 		<meta name="description" content="Escape The Room, das Projekt A zur Veranstaltung 'Einführung in die Programmierung'">
 	</head>
+	
 	<body>
 		<center>
 		<header>
 			Escape The Room
 		</header>
+		
 		<nav>
 			<table>
 				<tr>
@@ -28,19 +30,21 @@
 		
 		<main>
 			<article>
+			
 				<h1>Optionen</h1>
-				<section>
-					<form action=""> 
+				<section id="musik">
+					<form action=""> <!--muss noch eingebunden werden-->
 						<h2>Musik:<h2>
-						<input type=radio name=musik value=an checked>an
-						<input type=radio name=musik value=aus>aus
+						<input type="radio" name="musik" value="an" checked>an
+						<input type="radio" name="musik" value="aus">aus
 					</form>
 				</section>
-				<section>
-					<form action=""> 
+				
+				<section id="soundeffekt">
+					<form action=""> <!--muss noch eingebunden werden-->
 						<h2>Soundeffekte:<h2>
-						<input type=radio name=musik value=an checked>an
-						<input type=radio name=musik value=aus>aus
+						<input type="radio" name="musik" value="an" checked>an
+						<input type="radio" name="musik" value="aus">aus
 					</form>
 				</section>
 				
@@ -50,6 +54,7 @@
 		<footer>
 			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
 		</footer>
+		
 		<script type="text/javascript" src='game.js'></script>
 		</center>
 	</body>

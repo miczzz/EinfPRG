@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang=de>
 <html>
+	<!--genauso wie index.html-->
 	<head>
 		<meta charset=utf-8>
 		<link href="roomtwo.css" rel="stylesheet">
 		<title>Escape The Room</title>
 	</head>
+	
 	<body>
 		<header>
 			Escape The Room
 		</header>
+		
 		<main>
-			<input type=button id="startButton" value="Start" onclick=start()>
+			<input type="button" id="startButton" value="Start" onclick=start()>
 			<a href="start.html" id="beenden">Beenden</a>
 
 			<canvas id="background_canvas" width="800" height="400" style="border:1px solid #d3d3d3;">
@@ -22,32 +25,35 @@
 		
 			<canvas id="textfeld" width="800px" height="75px" style="border:1px solid #d3d3d3;"></canvas> 
 		
-			<canvas id="schluessel" width="70px" height='63px'></canvas> 
+			<canvas id="schluessel" width="70px" height="63px"></canvas> 
 		
-			<canvas id="schluessel2" width="70px" height='63px'></canvas> 
+			<canvas id="schluessel2" width="70px" height="63px"></canvas> 
+			
+			<!--Klickzonen-->
+			<ul>
+				<li class="click-zone a" data-zone="Fenster"></li>
+				<li class="click-zone b" data-zone="Tuer"></li>
+				<li class="click-zone c" data-zone="Inventar1"></li>
+				<li class="click-zone d" data-zone="Inventar2"></li>
+				<li class="click-zone e" data-zone="Kranz"></li>
+				<li class="click-zone f" data-zone="Teppich"></li>
+				<li class="click-zone g" data-zone="Stiefel1"></li>
+				<li class="click-zone h" data-zone="Stiefel2"></li>
+				<li class="click-zone i" data-zone="Stiefel3"></li>
+				<li class="click-zone j" data-zone="Stiefel4"></li>
+				<li class="click-zone k" data-zone="Feuer"></li>
+				<li class="click-zone l" data-zone="GeschenkLinks"></li>
+				<li class="click-zone m" data-zone="GeschenkRechts"></li>
+				<li class="click-zone n" data-zone="Stern"></li>
+				<li class="click-zone o" data-zone="Weihnachtsbaum"></li>
+				<li class="click-zone o2" data-zone="Weihnachtsbaum"></li>
+				<li class="click-zone o3" data-zone="Weihnachtsbaum"></li>
+				<li class="click-zone o4" data-zone="Weihnachtsbaum"></li>
+				<li class="click-zone p" data-zone="Gardine"></li>
+			</ul>
+
 		</main>
 		
-		<div class="click-zone a" data-zone="Fenster"></div>
-		<div class="click-zone b" data-zone="Tuer"></div>
-		<div class="click-zone c" data-zone="Inventar1"></div>
-		<div class="click-zone d" data-zone="Inventar2"></div>
-		<div class="click-zone e" data-zone="Kranz"></div>
-		<div class="click-zone f" data-zone="Teppich"></div>
-		<div class="click-zone g" data-zone="Stiefel1"></div>
-		<div class="click-zone h" data-zone="Stiefel2"></div>
-		<div class="click-zone i" data-zone="Stiefel3"></div>
-		<div class="click-zone j" data-zone="Stiefel4"></div>
-		<div class="click-zone k" data-zone="Feuer"></div>
-		<div class="click-zone l" data-zone="GeschenkLinks"></div>
-		<div class="click-zone m" data-zone="GeschenkRechts"></div>
-		<div class="click-zone n" data-zone="Stern"></div>
-		<div class="click-zone o" data-zone="Weihnachtsbaum"></div>
-		<div class="click-zone o2" data-zone="Weihnachtsbaum"></div>
-		<div class="click-zone o3" data-zone="Weihnachtsbaum"></div>
-		<div class="click-zone o4" data-zone="Weihnachtsbaum"></div>
-		<div class="click-zone p" data-zone="Gardine"></div>
-
-			
-	<script type="text/javascript" src='game2.js'></script>
+		<script type="text/javascript" src="game2.js"></script>
 	</body>
 </html>

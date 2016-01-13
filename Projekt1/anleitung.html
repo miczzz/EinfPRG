@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang=de>
-
 <html>
+
 	<head>
 		<meta charset=utf-8>
 		<link href="style.css" rel="stylesheet">
@@ -9,55 +9,74 @@
 		<meta name="keywords" content="Escape The Room, PRG, Media Systems, Projekt A, HTML, CSS, JavaScript">
 		<meta name="description" content="Escape The Room, das Projekt A zur Veranstaltung 'Einführung in die Programmierung'">
 	</head>
+	
 	<body>
 		<center>
 		<header>
-			Escape The Room
+			<a id="top">Escape The Room</a>
 		</header>
-			<nav>
-				<table>
-					<tr>
-						<td>
-							<a href="index.html" id="start" class="mybuttons">----- Start -----</a>
-						</td>
-						<td>
-							<a href="start.html" id="back" class="mybuttons">---- Zurück ----</a>
-						</td>
-					</tr>
-				</table>
-			</nav>
+		
+		<nav>
+			<table>
+				<tr>
+					<td>
+						<a href="index.html" id="start" class="mybuttons">----- Start -----</a>
+					</td>
+					<td>
+						<a href="start.html" id="back" class="mybuttons">---- Zurück ----</a>
+					</td>
+				</tr>
+			</table>
+		</nav>
+		
 		<main>
-			<article>
+			<article id="anleitung">
 				<h1>Anleitung</h1>
-				<section itemscope itemtype=http://schema.org/Game>
-					<details>
-						<summary>Story</summary>
-						<p>Du wachst alleine in einem dir fremden <span itemprop=gameLocation>Raum</span> auf. Die Tür ist verschlossen.</p>
+				
+				<section id="inhaltsverzeichnis">
+					<h2>Inhalt</h2>
+					<ul>
+						<li><a href="#story">Story</a></li>
+						<li><a href="#steuerung">Steuerung</a></li>
+						<li><a href="#ziel">Ziel</a></li>
+					</ul>	
+				</section>
+				
+				<section itemscope itemtype="http://schema.org/Game">
+					<details open>
+						<summary><a id="story">Story</a></summary>
+						<p>Du wachst alleine in einem dir fremden <span itemprop="gameLocation">Raum</span> auf. Die Tür ist verschlossen.</p>
 					</details>
 				</section>
+				
 				<section>
-					<details>
-						<summary>Steuerung</summary>
+					<details open>
+						<summary><a id="steuerung">Steuerung</a></summary>
 						<p>Klicke mit der rechten Maustaste auf die verschiedenen Objekte im Raum.</p>
 						<p>Im Textfeld werden dir Nachrichten zu den einzelnen Objekten eingeblendet.</p>
-						<p>Du kannst versteckte Gegenstände, wie z.B. einen <span itemprop=gameItem>Schlüssel</span> finden, die dir im</p>
+						<p>Du kannst versteckte Gegenstände, wie z.B. einen <span itemprop="gameItem">Schlüssel</span> finden, die dir im</p>
 						<p>Inventarfeld angezeigt werden. Diese können dir dabei helfen, den Raum zu verlassen.</p>
 					</details>
 				</section>
+				
 				<section>
-					<details>
-						<summary>Ziel</summary>
-						<p><span itemprop=quest>Finde so schnell wie möglich einen Weg nach draußen.</span></p>
+					<details open>
+						<summary><a id="ziel">Ziel</a></summary>
+						<p><span itemprop="quest">Finde so schnell wie möglich einen Weg nach draußen.</span></p>
 					</details>
 				</section>
+				
 				<h1>Viel Spaß!</h1>
 			</article>
-		</main>	
+			<a href="#top">Nach oben</a>
+		</main>
+		
 		<footer>
 			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
 		</footer>
-		</center		
-		<script type="text/javascript" src='game.js'></script>
+		
+		</center>		
+		<script type="text/javascript" src="game.js"></script>
 	</body>
 	
 </html>

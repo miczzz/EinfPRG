@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang=de>
 <html>
+
 	<head>
 		<meta charset=utf-8>
 		<link href="style.css" rel="stylesheet">
@@ -8,56 +9,67 @@
 		<meta name="keywords" content="Escape The Room, PRG, Media Systems, Projekt A, HTML, CSS, JavaScript">
 		<meta name="description" content="Escape The Room, das Projekt A zur Veranstaltung 'Einführung in die Programmierung'">
 	</head>
+	
 	<body>
 		<center>
 		<header>
-			Escape The Room
+			<a id="top">Escape The Room</a>
 		</header>
 		
+		<nav>
+			<table>
+				<tr>
+					<td>
+						<a href="index.html" id="start" class="mybuttons">------ Start ------</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="anleitung.html" id="instruction" class="mybuttons">--- Anleitung --- </a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="registrierung.html" id="signup" class="mybuttons">- Registrierung-</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="optionen.html" id="option" class="mybuttons">--- Optionen ---</a>
+					</td>
+				</tr>
+			</table>
+		</nav>
+		
 		<main>
-			<p>Das Projekt A zur Veranstaltung "Einführung in die Programmierung"</p>
-			<nav>
-				<table>
-					<tr>
-						<td>
-							<a href="index.html" id="start" class="mybuttons">------ Start ------</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="anleitung.html" id="instruction" class="mybuttons">--- Anleitung --- </a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="registrierung.html" id="signup" class="mybuttons">- Registrierung-</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="optionen.html" id="option" class="mybuttons">--- Optionen ---</a>
-						</td>
-					</tr>
-				</table>
-			</nav>
-		</main>
-		<aside>
 			<h2>Bisher verfügbare Levels:</h2>
-				<figure> 
-					<img src='images/hintergrund.png' alt=“Vorschau des ersten Levels"> <br> 
+			
+				<figure id="level1"> 
+					<img src="images/hintergrund.png" alt="Vorschau des ersten Levels"> <br> 
 					<figurecaption>Level 1</figurecaption>
 				</figure>
-						
-				<figure> 
-						<img src='images/hintergrund2.png' alt=“Vorschau des zweiten Levels“> <br>
-						<figurecaption>Level 2</figurecaption>
-				</figure>
 				
+				<figure id="level2"> 
+					<img src="images/hintergrund2.png" alt="Vorschau des zweiten Levels"> <br>
+					<figurecaption>Level 2</figurecaption>
+				</figure>
+		</main>
+		
+		<aside>
+			<section>
+				<p>
+				Das Spiel Escape The Room ist durch das Projekt A aus der Veranstaltung<br> 
+				"Einführung in die Programmierung" entstanden. 
+				<p>
+			</section>
+			<a href="#top">Nach oben</a>
 		</aside>
+		
 		<footer>
 			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
 		</footer>
-		<script type="text/javascript" src='game.js'></script>
+		
+		<script type="text/javascript" src="game.js"></script>
 		</center>
 	</body>
 </html>

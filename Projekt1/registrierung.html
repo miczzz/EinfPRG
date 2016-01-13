@@ -8,37 +8,48 @@
 		<meta name="keywords" content="Escape The Room, PRG, Media Systems, Projekt A, HTML, CSS, JavaScript">
 		<meta name="description" content="Escape The Room, das Projekt A zur Veranstaltung 'Einführung in die Programmierung'">
 	</head>
+	
 	<body>
 		<center>
 		<header>
 			Escape The Room
-		</header>	
+		</header>
+		
 		<main>
-			<form>
+			<form id="register">
 				<fieldset>
+				
 					<legend>Registrieren:</legend>
-					<label for=username>Benutzername:</label>
-					<input id=username name=username required>
+					<label for="username">Benutzername:</label>
+					<input id="username" name="username" required>
 					<br>
-					<label for=password>Passwort:</label>
-					<input id=password name=password required>
+					
+					<label for="password">Passwort:</label>
+					<input id="password" name="password" required>
 					<br>
-					<label for=email>E-Mail:</label> 
-					<input type=email id=email name=email required> 
+					
+					<label for="email">E-Mail:</label> 
+					<input type="email" id="email" name="email" required> 
 					<br>
-					<label for=birthdate>Geburtsdatum:</label> 
-					<input type=date id=birthdate name=birthdate required >
+					
+					<label for="birthdate">Geburtsdatum:</label> 
+					<input type="date" id="birthdate" name="birthdate" required >
 					<br>
+			
 				</fieldset>
-					<input type="checkbox" name="newletter" value="yes">Ich möchte Newletter erhalten.<br>
-					<br>
-					<input type="submit" value="Registrieren"/>
+				
+				<input type="checkbox" name="newletter" value="yes">Ich möchte regelmäßig Newletter erhalten.<br>
+				<br>
+				<input type="submit" value="Registrieren"/>
+				
 			</form>
 		</main>
+		
 		<footer>
 			<p>Ein Spiel von Michael Ziesemann, Hoai Nam Ha und Anh-Thu Nguyen</p>
 		</footer>
-		<script type="text/javascript" src='game.js'></script>
+		
+		<script type="text/javascript" src="game.js"></script>
 		</center>
 	</body>
 </html>
