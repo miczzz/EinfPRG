@@ -135,8 +135,7 @@ function changeText()
 	textfeld_ctx.fillText("Du hebst den Blumentopf an...und du findest einen Schl\xFCssel!", 25, 25);
 	hasKey = 1;
 	schluessel_ctx.drawImage(schluesselgrafik, 0,0);
-	sndName = "pickup";
-	playSound();
+	playSound("pickup");
 		}
 		else if(hasKey==1){
 		textfeld_ctx.fillText("Au\xDFer dem Schl\xFCssel ist hier nichts besonderes...und den hast du schon aufgehoben!", 25, 25);
@@ -188,15 +187,13 @@ function changeText()
 		}
 		if(hasKey==1&&hasRightKey==0){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt nicht, das kann doch nicht wahr sein!", 25, 25);
-		sndName = "wrong";
-		playSound();
+		playSound("wrong");
 		}
 		if(hasRightKey==1){
 		textfeld_ctx.fillText("Der Schl\xFCssel passt! Du kannst dein Gl\xFCck kaum fassen und genie\xDFt die Freiheit!", 25, 25);
 		textfeld_ctx.fillText("Clicks: " + clickCounter, 25, 45);
 		level2.style.visibility = "visible";
-		sndName = "won";
-		playSound();
+		playSound("won");
 		}
 	}	
 	if(currentClickZone == "KommodeRechts"){
@@ -207,8 +204,7 @@ function changeText()
 		hasRightKey=1;
 		textfeld_ctx.fillText("Du \xF6ffnest die Kommode mit dem Schl\xFCssel...und du findest einen neuen Schl\xFCssel!", 25, 25);
 		schluessel2_ctx.drawImage(schluesselgrafik2, 0,0);
-		sndName = "pickup";
-		playSound();
+		playSound("pickup");
 		}
 		else if(hasKey==1&&hasRightKey==1){
 		textfeld_ctx.fillText("Du hast die Kommode schon durchsucht und dabei einen Schl\xFCssel gefunden...auf zur T\xFCr!", 25, 25);
@@ -217,7 +213,7 @@ function changeText()
 	
 }
 
-function playSound() {
+function playSound(sndName) {
 
 if(sndName == "pickup"){
 	var snd = new Audio("sounds/pickup.wav"); 

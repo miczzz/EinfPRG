@@ -112,8 +112,7 @@ function changeText()
 		if(hasStar == 1){
 		textfeld_ctx.fillText("Mithilfe des Sterns gelingt es dir dich aus diesem alptraumhaften Reich zu befreien.", 25, 25);
 		textfeld_ctx.fillText("Clicks: " + clickCounterlvl2, 25, 45);
-		sndName = "won";
-		playSound();
+		playSound("won");
 		}
 	} 
 	if(currentClickZone == "Teppich"){
@@ -141,8 +140,7 @@ function changeText()
 			textfeld_ctx.fillText("Du erhältst eine Zuckerstange!", 25, 65);
 			hasCandycane = 1;
 			schluessel_ctx.drawImage(candycane, 0,0);
-			sndName = "pickup";
-			playSound();
+			playSound("pickup");
 			}
 		}
 	} 	
@@ -173,12 +171,11 @@ function changeText()
 			}
 			if(hasCandycane == 1 && hasStar == 0) {
 			textfeld_ctx.fillText("Mit der Zuckerstange als Verlängerung deines Arms gelingt es dir den Stern", 25, 25);
-			textfeld_ctx.fillText("vom Bein zu befreien.", 25, 45);
+			textfeld_ctx.fillText("vom Baum zu befreien.", 25, 45);
 			background_ctx.drawImage(hintergrundohnestern, 0, 0);
 			hasStar = 1;
 			schluessel2_ctx.drawImage(stern, 0,0);
-			sndName = "pickup";
-			playSound();
+			playSound("pickup");
 			}
 	}
 		if(currentClickZone == "Weihnachtsbaum"){
@@ -212,7 +209,7 @@ function changeText()
 
 
 
-function playSound() {
+function playSound(sndName) {
 
 if(sndName == "pickup"){
 	var snd = new Audio("sounds/pickup.wav"); 
