@@ -4,7 +4,8 @@ Aktueller Stand:
 Auf index.html kann das Spiel gespielt werden, alle benötigten Buttons und Canvas sind vorhanden.
 start.html ist die Startseite. Dort kann man auf die Buttons Start, Anleitung, Registrierung und Optionen klicken um 
 auf die anderen Seiten zu gelangen. Dadrunter ist eine Übersicht der bisher verfügbaren Levels zu sehen.
-Die verschiedenen Abschnitte der Anleitung können durch den Details-tag geöffnet werden, damit es übersichtlicher ist.
+Die verschiedenen Abschnitte der Anleitung können direkt durch das Inhaltsverzeichnis(anker) angezeigt werden und durch den 
+Details-tag geöffnet/geschlossen werden.
 Bei optionen.html kann man die Musik und Effekte durch Radio Buttons an oder ausschalten.
 Als letztes wurde registrierung.html erstellt. Eine Registrierung ist nötig, um sich evtl. auf einer Highscoreliste am
 Ende eintragen zu können oder um den Spielstand zu speichern.
@@ -102,6 +103,11 @@ Umsetzung:
 - in dem Formular müssen Benutzername, Passwort, Email und Geburtsdatum eingetragen werden, um sich zu registrieren
 - registrierung ist notwendig für spätere Highscoreliste oder zum speichern des Spielstandes
 - durch eine Checkbox kann entschieden werden ob man einen Newletter erhalten will oder nicht
+
+
+13 Januar 2015
+- anker hinzugefügt
+- code aufgeräumt(richtig eingerückt, einheitlich gemacht)
 
 
 

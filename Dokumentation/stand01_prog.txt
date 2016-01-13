@@ -1,6 +1,11 @@
 ﻿/* Michael Z.
 
+Fehlt noch:
+Musik einbauen und abspielen
 
+
++++ 13-01-16 +++
+Programmierung von playSound() verbessert, das war vorher etwas unnötig umständlich, der Parameter des Soundnamens wird jetzt direkt von der Funktion verlangt/aufgenommen.
 
 +++ 23-12-15 +++
 Level 2 Programmierung abgeschlossen. Pünktlich zu Weihnachten.
@@ -9,7 +14,6 @@ Einige (alberne) Sounds hinzugefügt. Alle Platzhalter durch richtige Texte ausg
 +++ 14-12-15 +++
 Eingliederung von Level 2 begonnen sowie Clickzonen gesetzt (noch nicht perfekt).
 
-
 +++ 12-12-15 +++
 - Clickcounter hinzugefügt, der später als Highscore gespeichert werden kann.
 
@@ -17,14 +21,12 @@ Eingliederung von Level 2 begonnen sowie Clickzonen gesetzt (noch nicht perfekt)
 - Startbutton wird jetzt zum Resetbutton nach dem ersten Klick.
 Somit braucht man den Browser nicht mehr neu zu laden um das Spiel von vorne zu beginnen.
 
-
 +++ 05-12-2015 +++
 - Programm so geändert, dass man die Klickzonen erst bedienen kann, wenn man auf Start drückt.
 Dazu wird die visibility der CSS-Elemente Standardmäßig auf hidden gesetzt und dann bei der Start-Methode auf visible geändert.
 So ähnlich durch querySelectors lassen sich dann auch andere CSS-Elemente recht einfach innerhalb JavaScript, also während des Spiels, ändern.
 - Blaue Ränder der Clickzonen mal ausgeblendet, so wirkt es direkt wie ein richtige(re)s Spiel :)
 - Bei Klick auf alle Clickzonen wird jetzt ein Text eingeblendet, wenn auch größtenteils noch Platzhalter.
-
 
 +++ 02-12-2015 +++
 -Textreaktionen verbessert, so dass wenn man einen Schlüssel bspw. bereits hat nicht weiterhin angezeigt wird, 
