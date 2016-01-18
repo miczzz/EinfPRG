@@ -233,3 +233,17 @@ function click() {
 	textfeld_ctx.clearRect(0, 0, 800, 75);
 	changeText();
 }
+
+/*
+=== Feedback Alpers, Jan 18 ===
+
+Versuchen Sie doch, die Texte in einem Dictionary zu speichern, damit Erweiterungen erleichtert werden.
+Momentan müssten Sie ja jeweils die Kontrollstruktur deutlich erweitern, was bei Dutzenden curentClickZones
+kaum mehr fehlerfrei möglich wäre.
+
+Was mir sehr gefällt ist, dass Sie im Gegensatz zu den meisten anderen Gruppen es geschafft haben,
+tatsächlich Elemente der HTML-Dokumente direkt an den JS-Code anzubinden. Was die Sounds angeht, da ist
+Ihre Lösung deutlich effizienter, als das bei HTML5 der Fall wäre, von daher passt das.
+
+=== Feedback Alpers, Ende ===
+*/
